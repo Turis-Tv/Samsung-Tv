@@ -112,8 +112,8 @@ https://stream.visit-x.tv/vxtv/live/playlist.m3u8
 
 
 
-#EXTINF:-1 tvg-id="1389" tvg-name="Radio Acogida" tvg-logo="https://i.paste.pics/7cdfc8ed9e16ea9a007b84b7fe63c1de.png", Radio Acogida * | CL
-https://videostream.chileservidores.com:8081/chiloethree/index.m3u8
+#EXTINF:-1 tvg-id="1389" tvg-name="Radio Acogida" tvg-logo="https://i.paste.pics/7cdfc8ed9e16ea9a007b84b7fe63c1de.png", Turis 125 * | CL
+http://video.eblinet.me/video/480/172.mp4
 #EXTINF:-1 tvg-id="1385" tvg-name="Veo TV" tvg-logo="https://i.paste.pics/801cf9a8ebc73581ca137bde012b80e1.png", Veo TV * | CL
 https://oracle.streaminghd.cl/eduardo555/eduardo555/playlist.m3u8
 #EXTINF:-1 tvg-id="1383" tvg-name="ATV Valdivia" tvg-logo="https://i.paste.pics/6270159fb81ff23a4e83a53a403ac21b.png", ATV Valdivia * | CL
