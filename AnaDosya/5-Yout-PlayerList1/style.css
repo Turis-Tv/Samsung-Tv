@@ -1,0 +1,41 @@
+.mCSB_container{
+	margin-right: 18px;
+}
+#youtubevideotabs{
+  width:300px;
+  float:left;
+  margin:0;
+  padding:0;
+  height: 315px;
+}
+#youtubevideotabs li{
+  list-style-type:none;
+  padding:10px;
+  height:50px;
+  display:block;
+  cursor:pointer;
+  font-weight:bold;
+  
+  
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #FFFFFF 0%, #E8E8E8 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #FFFFFF 0%, #E8E8E8 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #FFFFFF 0%, #E8E8E8 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #E8E8E8));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #E8E8E8 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #FFFFFF 0%, #E8E8E8 100%);
+  
+}
+#youtubeplayer{
+
+}
