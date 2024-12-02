@@ -1,186 +1,122 @@
-var videos = [
-  {
-    title: 'Porn Vod  1',
-    url: 'http://video.eblinet.me/video/480/3.mp4',
-    thumbnail: 'https://od.lk/s/OTFfMzE0ODk1MjZf/24.png'
-  },
-  {
-    title: 'Porn Vod  2',
-    url: 'http://video.eblinet.me/video/480/4.mp4',
-    thumbnail: 'https://od.lk/s/OTFfMzE0ODk1MjZf/24.png'
-  },
-  {
-    title: 'Porn Vod  3',
-    url: 'http://video.eblinet.me/video/480/1.mp4',
-    thumbnail: 'https://od.lk/s/OTFfMzE0ODk1MjZf/24.png'
-  },
-  {
-    title: 'Porn Vod  4',
-    url: 'http://video.eblinet.me/video/480/6.mp4',
-    thumbnail: 'https://od.lk/s/OTFfMzE0ODk1MjZf/24.png'
-  },
-  {
-    title: 'Porn Vod  5',
-    url: 'http://video.eblinet.me/video/480/12.mp4',
-    thumbnail: 'https://od.lk/s/OTFfMzE0ODk1MjZf/24.png'
-  },
-  {
-    title: 'Porn Vod  6',
-    url: 'http://video.eblinet.me/video/480/10.mp4',
-    thumbnail: 'https://od.lk/s/OTFfMzE0ODk1MjZf/24.png'
-  },
-  {
-    title: 'Porn Vod  7',
-    url: 'http://video.eblinet.me/video/480/14.mp4',
-    thumbnail: 'https://od.lk/s/OTFfMzE0ODk1MjZf/24.png'
-  },
-  {
-    title: 'Porn Vod  8',
-    url: 'http://video.eblinet.me/video/480/17.mp4',
-    thumbnail: 'https://od.lk/s/OTFfMzE0ODk1MjZf/24.png'
-  },
-  {
-    title: 'Porn Vod  9',
-    url: 'http://video.eblinet.me/video/480/20.mp4',
-    thumbnail: 'https://od.lk/s/OTFfMzE0ODk1MjZf/24.png'
-  },
-  {
-    title: 'Porn Vod  10',
-    url: 'http://video.eblinet.me/video/480/21.mp4',
-    thumbnail: 'https://od.lk/s/OTFfMzE0ODk1MjZf/24.png'
-  },
-  {
-    title: 'Porn Vod  11',
-    url: 'http://video.eblinet.me/video/480/22.mp4',
-    thumbnail: 'https://od.lk/s/OTFfMzE0ODk1MjZf/24.png'
-  },
-  {
-    title: 'Porn Vod  12',
-    url: 'http://video.eblinet.me/video/480/23.mp4',
-    thumbnail: 'https://od.lk/s/OTFfMzE0ODk1MjZf/24.png'
-  },
-  {
-    title: 'Porn Vod  13',
-    url: 'http://video.eblinet.me/video/480/25.mp4',
-    thumbnail: 'https://od.lk/s/OTFfMzE0ODk1MjZf/24.png'
-  },
-  {
-    title: 'Porn Vod  14',
-    url: 'http://video.eblinet.me/video/480/26.mp4',
-    thumbnail: 'https://od.lk/s/OTFfMzE0ODk1MjZf/24.png'
-  }
-]
+var myVid = document.getElementById("myVideo");
+        var pl = document.getElementById("pl");
+        var pr = document.getElementById("pr");
+        var seek = document.getElementById("slide");
+        var nx = document.getElementById("nx");
+        var volDown = document.getElementById("volDown");
+        var volUp = document.getElementById("volUp");
+        var vid1 = document.getElementById("vid1");
+        var vid2 = document.getElementById("vid2");
+        var vid3 = document.getElementById("vid3");
 
-document.addEventListener('DOMContentLoaded', function() {
-  
-  var _bg = document.querySelector('.bg');
-  var _video = document.querySelector('video');
-  var _title = document.querySelector('.header .title');
-  var _description = document.querySelector('.header .description');
-  var _time = document.querySelector('.time');
-  
-  var loadVideo = function(url, title, thumbnail) {
-    _video.src = url;
-    _title.innerHTML = title;
-    _bg.style.backgroundImage = 'url(' + thumbnail + ')';
-    _video.play();
-  }
-  
-  // Render video list
-  
-  var _list = document.querySelector('.list');
-  var _listItem = document.querySelector('.media-item');
-  var _listToggle = document.querySelector('[data-action = menu]');
-  
-  videos.forEach(function(video) {
-    var _newListItem = _listItem.cloneNode(true);
-    _newListItem.querySelector('.thumbnail').innerHTML = "<img src='" + video.thumbnail + "' />"
-    _newListItem.querySelector('.title').innerHTML = video.title;
-    _newListItem.addEventListener('click', function() {
-      _list.querySelector('.active') && _list.querySelector('.active').classList.remove('active');
-      _newListItem.classList.add('active');
-      loadVideo(video.url, video.title, video.thumbnail);
-    });
-    _list.appendChild(_newListItem);
-  });
-  
-  _listToggle.addEventListener('click', function() {
-    toggle(_list);
-  });
-  
-  
-  // Map custom video controls
-  
-  var _header = document.querySelector('.header');
-  var _controls = document.querySelector('.controls');
-  var _playpause = _controls.querySelector('[data-action=playpause]');
-  var _fullscreen = _controls.querySelector('[data-action=fullscreen]');
-  var _progress = _controls.querySelector('progress');
-  
-  _playpause.addEventListener('click', function() {
-    if (_video.paused) {
-      _video.play();
-      _playpause.innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Pause_font_awesome.svg/512px-Pause_font_awesome.svg.png" />';
-    }
-    else {
-      _video.pause();
-      _playpause.innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Play_font_awesome.svg/512px-Play_font_awesome.svg.png" />';
-    }
-  });
-  
-  _fullscreen.addEventListener('click', function() {
-    //_video.webkitEnterFullscreen();
-    hide(_header);
-    hide(_controls);
-    hide(_list);
-  });
-  
-  document.addEventListener('keydown', function(e) {
-    if (e.keyCode === 27) {
-      show(_header);
-      show(_controls);
-      show(_list);
-    }
-  });
-  
-  _video.addEventListener('click', function(e) {
-    show(_controls);
-    show(_header);
-  });
-  
-  _progress.addEventListener('click', function(e) {
-    var x = (e.pageX  - this.offsetLeft) / this.offsetWidth;
-    _video.currentTime = x * _video.duration;
-  });
-  
-  _video.addEventListener('loadedmetadata', function() {
-     _progress.setAttribute('max', _video.duration);
-  });
-  
-  _video.addEventListener('ended', function() {
-    _progress.value = _video.duration;
-  })
-  
-  _video.addEventListener('timeupdate', function() {
-    var currentTime = Math.floor(_video.currentTime);
-    var timeString = new Date(currentTime * 1000).toISOString().substr(11, 8);
-    
-    _progress.value = currentTime;
-    _time.innerHTML = timeString;
-  });
-  
-});
+        var sources = ["http://video.eblinet.me/video/480/26.mp4", "http://video.eblinet.me/video/480/25.mp4", "http://video.eblinet.me/video/480/23.mp4"];
 
-function toggle(_e) {
-  requestAnimationFrame(function() {
-    _e.classList.contains('hidden') ? _e.classList.remove('hidden') : _e.classList.add('hidden');
-  });
-}
+        var num = 0;
+        myVid.src = sources[num];
+        myVid.volume = 0.5;
 
-function hide(_e) {
-  _e.classList.contains('hidden') ? undefined : _e.classList.add('hidden');
-}
+        // start playing
+        function cinema() {
+            function playPause() {
+                if (myVid.paused === true) {
+                    myVid.play();
+                    pl.innerHTML = "Pause";
+                } else {
+                    myVid.pause();
+                    pl.innerHTML = "Play";
+                }
+            }
 
-function show(_e) {
-  _e.classList.contains('hidden') ?  _e.classList.remove('hidden') : undefined;
-}
+            function prevVid() {
+                if (num === 0) {
+                    num = 0;
+                } else {
+                    num--;
+                    seek.value = 0;
+                    myVid.src = sources[num];
+                    myVid.play();
+                }
+            }
+
+            function vidSeek() {
+                var vidTime = myVid.duration * (seek.value / 100);
+                myVid.currentTime = vidTime;
+            }
+
+            function vidTime() {
+                var nt = myVid.currentTime * (100 / myVid.duration);
+                seek.value = nt;
+            }
+
+            function nextVid() {
+                if (num === 2) {
+                    if (seek.value < 100) {
+                        num = 2;
+                    } else {
+                        num = 0;
+                        myVid.src = sources[num];
+                        seek.value = 0;
+                        myVid.pause();
+                        pl.innerHTML = "Play";
+                    }
+                } else {
+                    num++;
+                    seek.value = 0;
+                    myVid.src = sources[num];
+                    myVid.play();
+                }
+            }
+
+            function volChangeDown() {
+                if (myVid.volume > 0) {
+                    myVid.volume -= 0.1;
+                }
+            }
+
+            function volChangeUp() {
+                if (myVid.volume < 1) {
+                    myVid.volume += 0.1;
+                }
+            }
+
+            function vidChoice1() {
+                num = 0;
+                myVid.src = sources[num];
+                playPause();
+            }
+
+            function vidChoice2() {
+                num = 1;
+                myVid.src = sources[num];
+                playPause();
+            }
+
+            function vidChoice3() {
+                num = 2;
+                myVid.src = sources[num];
+                playPause();
+            }
+
+            // Add all event listeners
+            pl.addEventListener("click", playPause, false);
+            pr.addEventListener("click", prevVid, false);
+            seek.addEventListener("mousedown", function () {
+                myVid.pause();
+                pl.innerHTML = "Play";
+            });
+            seek.addEventListener("mouseup", function () {
+                myVid.play();
+                pl.innerHTML = "Pause";
+            });
+            seek.addEventListener("input", vidSeek, false);
+            myVid.addEventListener("timeupdate", vidTime, false);
+            myVid.addEventListener("ended", nextVid, false);
+            nx.addEventListener("click", nextVid, false);
+            volDown.addEventListener("mousedown", volChangeDown, false);
+            volUp.addEventListener("mousedown", volChangeUp, false);
+            vid1.addEventListener("click", vidChoice1);
+            vid2.addEventListener("click", vidChoice2);
+            vid3.addEventListener("click", vidChoice3);
+        }
+
+        cinema();
