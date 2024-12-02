@@ -2,31 +2,50 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>AluraFlix</title>
+  <title>Responsive HTML5 Video Player</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/icon.png?<?php echo time()?>" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/tt.css?<?php echo time()?>">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>AluraFlix: Aula | 04</title>
-</head>
-<body style="background-color: black;">
+<div class="root">
+  <div class="media-player">
+    <div class="header">
+      <div class="title">Title</div>
+    </div>
+    <div class="media">
+      <div class="message">Pick a video!</div>
+      <video src="" />
+    </div>
+    <div class="controls">
+      <div class="button" data-action="playpause">
+        <img src="https://od.lk/s/OTFfMzE0ODk1MjZf/24.png" />
+      </div>
+      <progress min='0' max='100' value='0'></progress>
+      <div class="time">00:00:00</div>
+      <div class="button" data-action="fullscreen">
+        <img src="https://od.lk/s/OTFfMzE0ODk1MjZf/24.png" />
+      </div>
+      <div class="button" data-action="menu">
+        <img src="https://od.lk/s/OTFfMzE0ODk1MjZf/24.png" />
+      </div>
+    </div>
+  </div>
+  <div class="list">
+  </div>
+</div>
+<div class="bg"></div>
 
-    <script src="aula05.js"></script>
-    <div class="copyright"><p>Turis Tv 2025 - Youtube Player</p></div>
-
-</body>
-</html>
+<div class="templates" style="display:none">
+  <div class="media-item">
+    <div class="thumbnail">
+      <img src="https://img.grouponcdn.com/deal/5EXVDNMDEe1mtyEK6Pgp/ZC-1057x634/v1/c700x420.jpg" />
+    </div>
+    <div class="info">
+      <div class="title">Title</div>
+    </div>
+  </div>
+</div>
 <!-- partial -->
   <script  src="./script.js"></script>
 
