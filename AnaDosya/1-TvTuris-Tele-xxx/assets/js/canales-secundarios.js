@@ -39,134 +39,79 @@ function m3utojson(m3u) {
 // https://www.m3u.cl/iptv-chile.php
 let m3u = `
 #EXTM3U
-#EXTINF:-1 tvg-id="4" tvg-name="Trt 1" tvg-logo="https://i2.paste.pics/d35132c511d1ef461b3e4af7db9e0b5f.png", Trt 1* | CL
-https://tv-trt1.medya.trt.com.tr/master_720.m3u8
-#EXTINF:-1 tvg-id="5" tvg-name="Kanal D" tvg-logo="https://i2.paste.pics/d35132c511d1ef461b3e4af7db9e0b5f.png", Kanal D * | CL
-https://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/track_4_1250/playlist.m3u8
-#EXTINF:-1 tvg-id="465" tvg-name="Star Tv" tvg-logo="https://i2.paste.pics/d35132c511d1ef461b3e4af7db9e0b5f.png",Star Tv* | CL
-https://dogus-live.daioncdn.net/startv/playlist.m3u8
-#EXTINF:-1 tvg-id="1160" tvg-name="Show Tv" tvg-logo="https://i2.paste.pics/99cc893c37784a17aac9a95ac3c7e5c8.png", Show Tv * | CL
-https://ciner-live.daioncdn.net/showtv/showtv.m3u8
-#EXTINF:-1 tvg-id="1255" tvg-name="Kanal 7 " tvg-logo="https://i2.paste.pics/355ba171055dd0e6747131673432cc18.png", Kanal  7 * | CL
-https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8
-#EXTINF:-1 tvg-id="31" tvg-name="360 Tv" tvg-logo="https://i2.paste.pics/6abc319563c207c4ba1fb2c199fedd86.png", 360 Tv * | CL
-https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
-#EXTINF:-1 tvg-id="1436" tvg-name="Tv 4" tvg-logo="https://i2.paste.pics/eee2cbc0f52cbb9c7c73ee13f72c0b96.png", Tv 4* | CL
-https://turkmedya-live.ercdn.net/tv4/tv4_720p.m3u8
-#EXTINF:-1 tvg-id="1058" tvg-name="Teve 2" tvg-logo="https://i2.paste.pics/e3cde58abf314e0e6b17b595c357936a.png", Teve 2 * | CL
-https://demiroren-live.daioncdn.net/teve2/teve2.m3u8
-#EXTINF:-1 tvg-id="1112" tvg-name="Beyaz Tv" tvg-logo="https://i2.paste.pics/5d6d67c298360548fd41a897f987628c.png", Beyaz Tv * | CL
-https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_1080p.m3u8
-#EXTINF:-1 tvg-id="947" tvg-name="Trt Belgesel" tvg-logo="https://i2.paste.pics/5efe361b75000b6eb6104bf22a0880fe.png", Trt Belgesel * | CL
-https://d2xwn494f2lep.cloudfront.net/v1/master/80dbfc318ab6b980679b32095ba497236de6d2f9/TRT-Belgesel/master.m3u8
-#EXTINF:-1 tvg-id="1266" tvg-name="Tlc" tvg-logo="https://i.paste.pics/4a15cf6d76aaf3246f3a6cedd48e0ac9.png", Tlc * | CL
-https://dogus-live.daioncdn.net/tlc/tlc_720p.m3u8
-#EXTINF:-1 tvg-id="1300" tvg-name="Tv 8" tvg-logo="https://i2.paste.pics/dad53a17aceb11d80b7ec90ec2398f2f.png", Tv 8 * | CL
-https://tv8-live.daioncdn.net/tv8/tv8.m3u8
-#EXTINF:-1 tvg-id="1420" tvg-name="Tv 6" tvg-logo="https://i2.paste.pics/3d543690d890b9a5918a8025aebcf2bc.png", Tv 6 * | CL
-https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/playlist.m3u8
-#EXTINF:-1 tvg-id="13" tvg-name="Trt Haber" tvg-logo="https://i2.paste.pics/004835d0c1a19dd14fa643dd18897d4d.png", Trt Haber * | CL
-https://tv-trthaber.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="1312" tvg-name="24 Tv" tvg-logo="https://i.paste.pics/8504c462729d61af6e1f0b59323f9a85.png", 24 Tv * | CL
-https://turkmedya-live.ercdn.net/tv24/tv24_720p.m3u8
-#EXTINF:-1 tvg-id="996" tvg-name="Akit Tv" tvg-logo="https://i2.paste.pics/f5a6133c6b0fcec076105dfd2508549c.png", Akit Tv * | CL
-https://akittv-live.ercdn.net/akittv/akittv_720p.m3u8
-#EXTINF:-1 tvg-id="1014" tvg-name="Bengu Turk" tvg-logo="https://i.paste.pics/37697a4fd7370ba4b48f377e79656ee2.png", Bengu Turk * | CL
-https://ensonhaber-live.ercdn.net/benguturk/benguturk.m3u8
-#EXTINF:-1 tvg-id="1016" tvg-name="Flash Haber" tvg-logo="https://i.paste.pics/37697a4fd7370ba4b48f377e79656ee2.png", Flash Haber * | CL
-https://stream.guventechnology.com:19360/flashtv/flashtv.m3u8
-#EXTINF:-1 tvg-id="1424" tvg-name="Turk Haber" tvg-logo="https://i2.paste.pics/d94a5f7f1913eea53167784065b56aee.png", Turk Haber * | CL
-https://edge1.socialsmart.tv/turkhaber/bant1/chunks.m3u8
-#EXTINF:-1 tvg-id="771" tvg-name="Trt Turk" tvg-logo="https://i2.paste.pics/a66f18725932decfa4fcf7f634060922.png", Trt Turk* | CL
-https://tv-trtturk.medya.trt.com.tr/master_720.m3u8
-#EXTINF:-1 tvg-id="1195" tvg-name="Vivi Turk" tvg-logo="https://i2.paste.pics/8c05e352159b95f3dc0092a6149b3daf.png",Vivi Turk* | CL
-https://stream.tiviturk.de/live/tiviturk.m3u8
-#EXTINF:-1 tvg-id="1288" tvg-name="Suyai TV" tvg-logo="https://i2.paste.pics/3d29bee85a41e947ab505098d83e8d64.png", Suyai TV * | CL
-https://5ff3d9babae13.streamlock.net:443/ewdnnusyjt/ewdnnusyjt/playlist.m3u8
-#EXTINF:-1 tvg-id="1287" tvg-name="CDR" tvg-logo="https://i2.paste.pics/bd867f1a431411c9720ec246807ade49.png", CDR * | CL
-https://live-hls-xgod.livepush.io/live_cdn/emaf6CHYV7M-RQcL2/index.m3u8
-#EXTINF:-1 tvg-id="1098" tvg-name="CRTV" tvg-logo="https://i2.paste.pics/bf68b159547597c39574aec9dd7c626a.png", CRTV * | CL
-https://vdo.panelstreaming.live:3058/hybrid/play.m3u8
-#EXTINF:-1 tvg-id="897" tvg-name="Retro Play TV" tvg-logo="https://i2.paste.pics/90f2f266cb4f68333119a06b99d65d10.png", Retro Play TV * | CL
-https://v4.tustreaming.cl/retroplaytv/index.m3u8
-#EXTINF:-1 tvg-id="1482" tvg-name="Radio Eva Digital" tvg-logo="https://i2.paste.pics/b242fea3347af3f807d518f3b834d2c1.png", Radio Eva Digital * | CL
-https://vdo.panelstreaming.live:3466/stream/play.m3u8
-#EXTINF:-1 tvg-id="1481" tvg-name="Mamalluca TV" tvg-logo="https://i2.paste.pics/5304dac5430b156b0909c664448fdc7a.png", Mamalluca TV * | CL
-https://stmv2.zcasthn.com.br/mamallucatv/mamallucatv/playlist.m3u8
-#EXTINF:-1 tvg-id="1476" tvg-name="Urban Pro DJ" tvg-logo="https://i2.paste.pics/5aed2aa69dbe9107dac26945d8e0f05c.png", Urban Pro DJ * | CL
-https://vdochile.com:3119/stream/play.m3u8
-#EXTINF:-1 tvg-id="1474" tvg-name="WF9" tvg-logo="https://i2.paste.pics/82bfc4cf5af7c8e65bbb2711cc1680d3.png", WF9 * | CL
-https://5eaccbab48461.streamlock.net:1936/8240/8240/playlist.m3u8
-#EXTINF:-1 tvg-id="1473" tvg-name="Music PUQ" tvg-logo="https://i2.paste.pics/e011164c3dcd24bc2f5f7924677e3891.png", Music PUQ * | CL
-https://vdochile.com:3761/live/redupxprlive.m3u8
-#EXTINF:-1 tvg-id="1472" tvg-name="La Nuestra" tvg-logo="https://i2.paste.pics/45043ca151a5f9ab3e8c62078c79ab26.png", La Nuestra * | CL
-https://redirector.rudo.video/hls-video/339f69c6122f6d8f4574732c235f09b7683e31a5/ln/ln.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="1469" tvg-name="TV Canal 5" tvg-logo="https://i2.paste.pics/fc72e5076205656f9240cf2c19659f51.png", TV Canal 5 * | CL
-https://vdochile.com:3088/stream/play.m3u8
-#EXTINF:-1 tvg-id="1468" tvg-name="Radio Araucania Laja" tvg-logo="https://i2.paste.pics/f49ac74349c5d554de967f2387274e12.png", Radio Araucania Laja * | CL
-https://stmv2.zcasthn.com.br/radioaraucania/radioaraucania/playlist.m3u8
-#EXTINF:-1 tvg-id="1467" tvg-name="Radio UC" tvg-logo="https://i2.paste.pics/174966158c389cbc1163bc9cddc678ce.png", Radio UC * | CL
-https://stmv2.zcasthn.com.br/radiouc/radiouc/playlist.m3u8
-#EXTINF:-1 tvg-id="1466" tvg-name="Pandamax TV" tvg-logo="https://i2.paste.pics/ec98378f852412f496eaa557998255ac.png", Pandamax TV * | CL
-https://streaming.zappix.live:3062/live/animaxlive.m3u8
-#EXTINF:-1 tvg-id="1465" tvg-name="33 Segundos TV" tvg-logo="https://i2.paste.pics/5590098cd138c0b1a626ecb266c1c10e.png", 33 Segundos TV * | CL
-https://stmv2.zcasthn.com.br/segundos/segundos/playlist.m3u8
-#EXTINF:-1 tvg-id="1463" tvg-name="Radio Bienvenida FM" tvg-logo="https://i2.paste.pics/17ed714058cb5e62802ef8e04482748a.png", Radio Bienvenida FM * | CL
-https://panel.tvstream.cl:1936/8012/8012/playlist.m3u8
-#EXTINF:-1 tvg-id="1461" tvg-name="Los Rios Al Dia" tvg-logo="https://i2.paste.pics/654339e3e8e4096492037cfbca2ec3e2.png", Los Rios Al Dia * | CL
-https://losriosaldia.ngrok.app/hls/stream.m3u8
-#EXTINF:-1 tvg-id="1457" tvg-name="Comunitaria Radio Tv" tvg-logo="https://i2.paste.pics/847f6fb846d40df92c90f6daff9730e9.png", Comunitaria Radio Tv * | CL
-https://panel.tvstream.cl:1936/8050/8050/playlist.m3u8
-#EXTINF:-1 tvg-id="1455" tvg-name="TV EnPlacilla" tvg-logo="https://i2.paste.pics/201212ba4a9e52d2a39ddb6bb86b18d5.png", TV EnPlacilla * | CL
-https://panel.tvstream.cl:1936/8038/8038/playlist.m3u8
-#EXTINF:-1 tvg-id="1451" tvg-name="Nexovision" tvg-logo="https://i2.paste.pics/3279c8ece7f77ca4b871193c50a37fca.png", Nexovision * | CL
-https://stmv2.zcasthn.com.br/nexovision/nexovision/playlist.m3u8
-#EXTINF:-1 tvg-id="905" tvg-name="Taltal TV" tvg-logo="https://i2.paste.pics/18b445e2ec674ae21c12e73f6714501d.png", Taltal TV * | CL
-https://ssh101.bozztv.com/ssh101/taltal/playlist.m3u8
-#EXTINF:-1 tvg-id="1445" tvg-name="Teatrix" tvg-logo="https://i2.paste.pics/704a8832ee0cecaadc927139a8a43db8.png", Teatrix * | CL
-https://content.uplynk.com/channel/585ab4fbd865426abd6fbd48fc631b6e.m3u8
-#EXTINF:-1 tvg-id="1435" tvg-name="+Cine" tvg-logo="https://i2.paste.pics/e349b7ba64870b6e3cceb058c1f3a6ce.png", +Cine * | CL
-https://tv.streaming-chile.com:1936/8142/8142/+Cine.m3u8
-#EXTINF:-1 tvg-id="349" tvg-name="Supersonika TV" tvg-logo="https://i2.paste.pics/fef1c0d39162f064f634fd3250f23659.png", Supersonika TV * | CL
-https://unlimited1-cl-isp.dps.live/supersonikatv/supersonikatv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="1434" tvg-name="Marga Marga TV" tvg-logo="https://i2.paste.pics/ac3ec8e1657f335cc9a19e8c716f7d42.png", Marga Marga TV * | CL
-https://v1.tustreaming.cl/margamargatv/index.m3u8
-#EXTINF:-1 tvg-id="1432" tvg-name="El Centro TV" tvg-logo="https://i2.paste.pics/c7efa75621818f201a2d01c7eb17cf6c.png", El Centro TV * | CL
-https://v1.tustreaming.cl:443/diarioelcentrotv/index.m3u8
-#EXTINF:-1 tvg-id="1431" tvg-name="Canal 30 Loncomilla" tvg-logo="https://i2.paste.pics/4002196065803939c387bb88ae54b8be.png", Canal 30 Loncomilla * | CL
-https://v1.tustreaming.cl:19360/canal30loncomilla/canal30loncomilla.m3u8
-#EXTINF:-1 tvg-id="1430" tvg-name="Classic Channel" tvg-logo="https://i2.paste.pics/d2ece12bb549ab394f008dd5415ebbbf.png", Classic Channel * | CL
-https://paneltv.online:1936/8046/8046/playlist.m3u8
-#EXTINF:-1 tvg-id="1428" tvg-name="Castro Municipio TV" tvg-logo="https://i2.paste.pics/0e74cd22caf321b8f0c13583ab55f1d7.png", Castro Municipio TV * | CL
-https://videostream.chileservidores.com:8081/chiloefour/index.m3u8
-#EXTINF:-1 tvg-id="1427" tvg-name="TV Provincial" tvg-logo="https://i2.paste.pics/e04ebf765005c8e9ef9a26ef0c0c1134.png", TV Provincial * | CL
-https://v4.tustreaming.cl/limachemovil/index.m3u8
-#EXTINF:-1 tvg-id="1422" tvg-name="Radio Rosa FM" tvg-logo="https://i2.paste.pics/778a5721e70978104e5dd47376775293.png", Radio Rosa FM * | CL
-https://tv.streaming-chile.com:1936/rosafm/rosafm/playlist.m3u8
-#EXTINF:-1 tvg-id="1421" tvg-name="13 Kids" tvg-logo="https://i2.paste.pics/fe14daf029d32fcab7f6305dc2e7a86e.png", 13 Kids * | CL
-https://origin.dpsgo.com/ssai/event/LhHrVtyeQkKZ-Ye_xEU75g/master.m3u8
-#EXTINF:-1 tvg-id="1416" tvg-name="TV y TV" tvg-logo="https://i2.paste.pics/5f5e3edcd542883e19bd1c0c59b59fad.png", TV y TV * | CL
-https://Stmv1.zcasthn.com.br/tvytv/tvytv/playlist.m3u8
-#EXTINF:-1 tvg-id="1418" tvg-name="Chile Visual TV" tvg-logo="https://i2.paste.pics/9433332812f73a536d41248ff05a903c.png", Chile Visual TV * | CL
-https://stmv2.zcasthn.com.br/streamlatino/streamlatino/playlist.m3u8
-#EXTINF:-1 tvg-id="1415" tvg-name="Radio Stefania" tvg-logo="https://i2.paste.pics/72aa914d751b131216d9c3880ea3556b.png", Radio Stefania * | CL
-https://Stmv1.zcasthn.com.br/franzvalenzuela/franzvalenzuela/playlist.m3u8
-#EXTINF:-1 tvg-id="1408" tvg-name="Radio Continente FM" tvg-logo="https://i2.paste.pics/793d78275b250f7d1919c5cea6febd95.png", Radio Continente FM * | CL
-https://streamlov.alsolnet.com/continentefm/live/playlist.m3u8
-#EXTINF:-1 tvg-id="1407" tvg-name="Milodon TV" tvg-logo="https://i2.paste.pics/11978fb15e78b24dc2c7cd78342f3c9f.png", Milodon TV * | CL
-https://oracle.streaminghd.cl/milodontvenvivo/milodontvenvivo/playlist.m3u8
-#EXTINF:-1 tvg-id="1404" tvg-name="Canal Noticias Colchagua" tvg-logo="https://i2.paste.pics/e2bc4cbe5aab410fe3b44148f01c5877.png", Canal Noticias Colchagua * | CL
-https://oracle.streaminghd.cl:443/cncmedia/cncmedia/playlist.m3u8
-#EXTINF:-1 tvg-id="1402" tvg-name="Canal Pais" tvg-logo="https://pbs.twimg.com/profile_images/1603428853350907904/-UBQCAHz_400x400.jpg", Canal Pais * | CL
-https://unlimited1-cl-isp.dps.live/canalpais/canalpais.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="1396" tvg-name="Alerce TV" tvg-logo="https://i2.paste.pics/3fc7065e88b283066dc23173d5e21e2b.png", Alerce TV * | CL
-https://s1.tvdatta.com:3384/live/canal20tvlive.m3u8
-#EXTINF:-1 tvg-id="1393" tvg-name="La Melinkana TV" tvg-logo="https://i.paste.pics/d97e9b3a023839600a489348ed5f62df.png", La Melinkana TV * | CL
-https://v1.tustreaming.cl/melinkana/index.m3u8
-#EXTINF:-1 tvg-id="1330" tvg-name="Sureña TV" tvg-logo="https://i.paste.pics/61bca781a30ae3b52da01e9d47706654.png", Sureña TV * | CL
-http://170.247.204.26:8081/wircom/surena/playlist.m3u8
-#EXTINF:-1 tvg-id="1391" tvg-name="En la Noticia" tvg-logo="https://i.paste.pics/5bce4a819c49af17fd39a8d0f4a697e3.png", En la Noticia * | CL
-https://videostream.chileservidores.com:8081/chiloetwo/index.m3u8
+#EXTINF:-1 tvg-id="4" tvg-name="Anal" tvg-logo="https://i2.paste.pics/d35132c511d1ef461b3e4af7db9e0b5f.png", Anal * | CL
+https://cdn.adultiptv.net/anal.m3u8
+#EXTINF:-1 tvg-id="5" tvg-name="Asian" tvg-logo="https://i2.paste.pics/d35132c511d1ef461b3e4af7db9e0b5f.png", Asian * | CL
+https://cdn.adultiptv.net/asian.m3u8
+#EXTINF:-1 tvg-id="465" tvg-name="Big Ass" tvg-logo="https://i2.paste.pics/d35132c511d1ef461b3e4af7db9e0b5f.png",Big Ass* | CL
+https://cdn.adultiptv.net/bigass.m3u8
+#EXTINF:-1 tvg-id="1160" tvg-name="Bigdick" tvg-logo="https://i2.paste.pics/99cc893c37784a17aac9a95ac3c7e5c8.png", Bigdick * | CL
+https://cdn.adultiptv.net/bigdick.m3u8
+#EXTINF:-1 tvg-id="1255" tvg-name="Big Tits " tvg-logo="https://i2.paste.pics/355ba171055dd0e6747131673432cc18.png", Big Tits * | CL
+https://cdn.adultiptv.net/bigtits.m3u8
+#EXTINF:-1 tvg-id="31" tvg-name="Blonde" tvg-logo="https://i2.paste.pics/6abc319563c207c4ba1fb2c199fedd86.png", Blonde * | CL
+https://cdn.adultiptv.net/blonde.m3u8
+#EXTINF:-1 tvg-id="1436" tvg-name="Blowjob" tvg-logo="https://i2.paste.pics/eee2cbc0f52cbb9c7c73ee13f72c0b96.png",Blowjob* | CL
+https://cdn.adultiptv.net/blowjob.m3u8
+#EXTINF:-1 tvg-id="1058" tvg-name="Brunette" tvg-logo="https://i2.paste.pics/e3cde58abf314e0e6b17b595c357936a.png", Brunette * | CL
+https://cdn.adultiptv.net/brunette.m3u8
+#EXTINF:-1 tvg-id="1112" tvg-name="Compilation" tvg-logo="https://i2.paste.pics/5d6d67c298360548fd41a897f987628c.png", Compilation * | CL
+https://cdn.adultiptv.net/compilation.m3u8
+#EXTINF:-1 tvg-id="947" tvg-name="Fetish" tvg-logo="https://i2.paste.pics/5efe361b75000b6eb6104bf22a0880fe.png", Fetish * | CL
+https://cdn.adultiptv.net/fetish.m3u8
+#EXTINF:-1 tvg-id="1266" tvg-name="Gangbang" tvg-logo="https://i.paste.pics/4a15cf6d76aaf3246f3a6cedd48e0ac9.png", Gangbang * | CL
+https://cdn.adultiptv.net/gangbang.m3u8
+#EXTINF:-1 tvg-id="1300" tvg-name="Hardcore" tvg-logo="https://i2.paste.pics/dad53a17aceb11d80b7ec90ec2398f2f.png", Hardcore * | CL
+https://cdn.adultiptv.net/hardcore.m3u8
+#EXTINF:-1 tvg-id="1420" tvg-name="Interracial" tvg-logo="https://i2.paste.pics/3d543690d890b9a5918a8025aebcf2bc.png", Interracial* | CL
+https://cdn.adultiptv.net/interracial.m3u8
+#EXTINF:-1 tvg-id="13" tvg-name="Latina" tvg-logo="https://i2.paste.pics/004835d0c1a19dd14fa643dd18897d4d.png", Latina * | CL
+https://cdn.adultiptv.net/latina.m3u8
+#EXTINF:-1 tvg-id="1312" tvg-name="Lesbian" tvg-logo="https://i.paste.pics/8504c462729d61af6e1f0b59323f9a85.png", Lesbian* | CL
+https://cdn.adultiptv.net/lesbian.m3u8
+#EXTINF:-1 tvg-id="996" tvg-name="Live Cams" tvg-logo="https://i2.paste.pics/f5a6133c6b0fcec076105dfd2508549c.png", Live Cams * | CL
+https://cdn.adultiptv.net/livecams.m3u8
+#EXTINF:-1 tvg-id="1014" tvg-name="MILF" tvg-logo="https://i.paste.pics/37697a4fd7370ba4b48f377e79656ee2.png", MILF * | CL
+https://cdn.adultiptv.net/milf.m3u8
+#EXTINF:-1 tvg-id="1016" tvg-name="Pornstar" tvg-logo="https://i.paste.pics/37697a4fd7370ba4b48f377e79656ee2.png", Pornstar * | CL
+https://cdn.adultiptv.net/pornstar.m3u8
+#EXTINF:-1 tvg-id="1424" tvg-name="POV" tvg-logo="https://i2.paste.pics/d94a5f7f1913eea53167784065b56aee.png", POV * | CL
+https://cdn.adultiptv.net/pov.m3u8
+#EXTINF:-1 tvg-id="771" tvg-name="Rough" tvg-logo="https://i2.paste.pics/a66f18725932decfa4fcf7f634060922.png", Rough* | CL
+https://cdn.adultiptv.net/rough.m3u8
+#EXTINF:-1 tvg-id="1195" tvg-name="Russian" tvg-logo="https://i2.paste.pics/8c05e352159b95f3dc0092a6149b3daf.png",Russian* | CL
+https://cdn.adultiptv.net/russian.m3u8
+#EXTINF:-1 tvg-id="1288" tvg-name="Teen" tvg-logo="https://i2.paste.pics/3d29bee85a41e947ab505098d83e8d64.png", Teen * | CL
+https://cdn.adultiptv.net/teen.m3u8
+#EXTINF:-1 tvg-id="1287" tvg-name="Threesome" tvg-logo="https://i2.paste.pics/bd867f1a431411c9720ec246807ade49.png", Threesome * | CL
+https://cdn.adultiptv.net/threesome.m3u8
+#EXTINF:-1 tvg-id="1098" tvg-name="Woman" tvg-logo="https://i2.paste.pics/bf68b159547597c39574aec9dd7c626a.png", Woman * | CL
+https://live.redtraffic.net/woman.m3u8
+#EXTINF:-1 tvg-id="897" tvg-name="Babestation24" tvg-logo="https://i2.paste.pics/90f2f266cb4f68333119a06b99d65d10.png", Babestation24 * | CL
+https://59ec5453559f0.streamlock.net/mexicotv/smil:miamitvmexico/playlist.m3u8
+#EXTINF:-1 tvg-id="1482" tvg-name="TV Mexico" tvg-logo="https://i2.paste.pics/b242fea3347af3f807d518f3b834d2c1.png", TV Mexico* | CL
+https://59ec5453559f0.streamlock.net/mexicotv/smil:miamitvmexico/playlist.m3u8
+#EXTINF:-1 tvg-id="1481" tvg-name="Anal" tvg-logo="https://i2.paste.pics/5304dac5430b156b0909c664448fdc7a.png", Anal* | CL
+https://live.mycamtv.com/anal.m3u8
+#EXTINF:-1 tvg-id="1476" tvg-name="Arab" tvg-logo="https://i2.paste.pics/5aed2aa69dbe9107dac26945d8e0f05c.png", Arab * | CL
+http://live.mycamtv.com/arab.m3u8
+#EXTINF:-1 tvg-id="1474" tvg-name="Asian" tvg-logo="https://i2.paste.pics/82bfc4cf5af7c8e65bbb2711cc1680d3.png", Asian * | CL
+https://live.mycamtv.com/asian.m3u8
+#EXTINF:-1 tvg-id="1473" tvg-name="Big Ass" tvg-logo="https://i2.paste.pics/e011164c3dcd24bc2f5f7924677e3891.png", Big Ass * | CL
+https://live.mycamtv.com/defstream.m3u8
+#EXTINF:-1 tvg-id="1472" tvg-name="Big Tits" tvg-logo="https://i2.paste.pics/45043ca151a5f9ab3e8c62078c79ab26.png", Big Tits* | CL
+https://live.mycamtv.com/bigtits.m3u8
+#EXTINF:-1 tvg-id="1469" tvg-name="Blonde" tvg-logo="https://i2.paste.pics/fc72e5076205656f9240cf2c19659f51.png", Blonde * | CL
+https://live.mycamtv.com/blonde.m3u8
+#EXTINF:-1 tvg-id="1468" tvg-name="O-la-la!" tvg-logo="https://i2.paste.pics/f49ac74349c5d554de967f2387274e12.png",O-la-la!* | CL
+http://31.148.48.15/O-la-la/index.m3u8
+#EXTINF:-1 tvg-id="1467" tvg-name="TV Mexico" tvg-logo="https://i2.paste.pics/174966158c389cbc1163bc9cddc678ce.png", TV Mexico * | CL
+https://59ec5453559f0.streamlock.net/mexicotv/smil:miamitvmexico/playlist.m3u8
+#EXTINF:-1 tvg-id="1466" tvg-name="Visit-X TV " tvg-logo="https://i2.paste.pics/ec98378f852412f496eaa557998255ac.png", Visit-X TV  * | CL
+https://stream.visit-x.tv/vxtv/live/playlist.m3u8
+
+
+
 #EXTINF:-1 tvg-id="1389" tvg-name="Radio Acogida" tvg-logo="https://i.paste.pics/7cdfc8ed9e16ea9a007b84b7fe63c1de.png", Radio Acogida * | CL
 https://videostream.chileservidores.com:8081/chiloethree/index.m3u8
 #EXTINF:-1 tvg-id="1385" tvg-name="Veo TV" tvg-logo="https://i.paste.pics/801cf9a8ebc73581ca137bde012b80e1.png", Veo TV * | CL

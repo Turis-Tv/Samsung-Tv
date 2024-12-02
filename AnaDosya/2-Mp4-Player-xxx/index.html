@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MP4 Player</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--[if lt IE 9]>
+  <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<div class="container">
+<div class="vidcontainer">
+<video id="myvid" >
+
+  Your browser does not support the video tag.
+  
+</video>
+
+        <div class="topControl">
+			<div class="progress">
+				<span class="bufferBar"></span>
+				<span class="timeBar"></span>
+			</div>
+			<div class="time">
+				<span class="current"></span> / 
+				<span class="duration"></span> 
+			</div>
+        </div>
+
+<div class="controllers">
+  	<button class="btnPlay" title="Play/Pause video"></button>
+  	<button class="prevvid disabled" title="Previous video"><i class="fa fa-step-forward fa-rotate-180"></i></button>
+    <button class="nextvid" title="Next video"><i class="fa fa-step-forward"></i></button>
+    <button class="sound sound2 btn" title="Mute/Unmute sound"></button>
+    <div class="volume" title="Set volume">
+			<span class="volumeBar"></span>
+	</div>
+    <button class="btnFS " style="float:right" title="full screen"></button>
+    <button class="btnspeed " style="float:right" title="Video speed"><i class="fa fa-gear"></i></button>
+    <ul class="speedcnt">
+    	<li class="spdx50">1.5</li>
+    	<li class="spdx25">1.25</li>
+    	<li class="spdx1 selected">Normal</li>
+    	<li class="spdx050">0.5</li>
+    </ul>
+	<button class="btnLight lighton " style="float:right" title="on/off light"><i class="fa fa-lightbulb-o"></i></button>
+</div>
+<div class="ads">
+    	<span class="closeme fa fa-close"></span>
+
+</div>
+<div class="bigplay" title="play the video"><i class="fa fa-play-circle-o"></i></div>
+<div class="loading"><i class="fa fa-spinner fa-spin"></i></div>
+    </div>
+
+	<div class="videolist">
+		<nav class="vids">
+
+
+
+
+<a class="link" href="http://video.eblinet.me/video/480/3.mp4">Vod 1</a>
+<a class="link" href="http://video.eblinet.me/video/480/4.mp4">Vod 2</a>
+<a class="link" href="http://video.eblinet.me/video/480/1.mp4">Vod 3</a>
+<a class="link" href="http://video.eblinet.me/video/480/6.mp4">Vod 4</a>
+<a class="link" href="http://video.eblinet.me/video/480/12.mp4">Vod 5</a>
+<a class="link" href="http://video.eblinet.me/video/480/10.mp4">Vod 6</a>
+<a class="link" href="http://video.eblinet.me/video/480/14.mp4">Vod 7</a>
+<a class="link" href="http://video.eblinet.me/video/480/17.mp4">Vod 8</a>
+<a class="link" href="http://video.eblinet.me/video/480/20.mp4">Vod 9</a>
+<a class="link" href="http://video.eblinet.me/video/480/21.mp4">Vod 10</a>
+<a class="link" href="http://video.eblinet.me/video/480/22.mp4">Vod 11</a>
+<a class="link" href="http://video.eblinet.me/video/480/23.mp4">Vod 12</a>
+<a class="link" href="http://video.eblinet.me/video/480/25.mp4">Vod 13</a>
+<a class="link" href="http://video.eblinet.me/video/480/26.mp4">Vod 14</a>
+<a class="link" href="http://video.eblinet.me/video/480/28.mp4">Vod 15</a>
+<a class="link" href="http://video.eblinet.me/video/480/31.mp4">Vod 16</a>
+<a class="link" href="http://video.eblinet.me/video/480/34.mp4">Vod 17</a>
+<a class="link" href="http://video.eblinet.me/video/480/35.mp4">Vod 18</a>
+<a class="link" href="http://video.eblinet.me/video/480/36.mp4">Vod 19</a>
+<a class="link" href="http://video.eblinet.me/video/480/42.mp4">Vod 20</a>
+<a class="link" href="http://video.eblinet.me/video/480/43.mp4">Vod 21</a>
+<a class="link" href="http://video.eblinet.me/video/480/44.mp4">Vod 22</a>
+<a class="link" href="http://video.eblinet.me/video/480/47.mp4">Vod 23</a>
+<a class="link" href="http://video.eblinet.me/video/480/48.mp4">Vod 24</a>
+<a class="link" href="http://video.eblinet.me/video/480/49.mp4">Vod 25</a>
+<a class="link" href="http://video.eblinet.me/video/480/50.mp4">Vod 26</a>
+<a class="link" href="http://video.eblinet.me/video/480/51.mp4">Vod 27</a>
+<a class="link" href="http://video.eblinet.me/video/480/58.mp4">Vod 28</a>
+<a class="link" href="http://video.eblinet.me/video/480/59.mp4">Vod 29</a>
+<a class="link" href="http://video.eblinet.me/video/480/60.mp4">Vod 30</a>
+<a class="link" href="http://video.eblinet.me/video/480/61.mp4">Vod 31</a>
+<a class="link" href="http://video.eblinet.me/video/480/65.mp4">Vod 32</a>
+<a class="link" href="http://video.eblinet.me/video/480/75.mp4">Vod 33</a>
+<a class="link" href="http://video.eblinet.me/video/480/78.mp4">Vod 34</a>
+<a class="link" href="http://video.eblinet.me/video/480/79.mp4">Vod 35</a>
+<a class="link" href="http://video.eblinet.me/video/480/80.mp4">Vod 36</a>
+<a class="link" href="http://video.eblinet.me/video/480/82.mp4">Vod 37</a>
+<a class="link" href="http://video.eblinet.me/video/480/81.mp4">Vod 38</a>
+<a class="link" href="http://video.eblinet.me/video/480/86.mp4">Vod 39</a>
+<a class="link" href="http://video.eblinet.me/video/480/88.mp4">Vod 40</a>
+<a class="link" href="http://video.eblinet.me/video/480/87.mp4">Vod 41</a>
+<a class="link" href="http://video.eblinet.me/video/480/92.mp4">Vod 42</a>
+<a class="link" href="http://video.eblinet.me/video/480/96.mp4">Vod 43</a>
+<a class="link" href="http://video.eblinet.me/video/480/99.mp4">Vod 44</a>
+<a class="link" href="http://video.eblinet.me/video/480/100.mp4">Vod 45</a>
+<a class="link" href="http://video.eblinet.me/video/480/103.mp4">Vod 46</a>
+<a class="link" href="http://video.eblinet.me/video/480/104.mp4">Vod 47</a>
+<a class="link" href="http://video.eblinet.me/video/480/108.mp4">Vod 48</a>
+<a class="link" href="http://video.eblinet.me/video/480/112.mp4">Vod 49</a>
+<a class="link" href="http://video.eblinet.me/video/480/113.mp4">Vod 50</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+		</nav>
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
