@@ -2,139 +2,291 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>MP4 Player</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>Video Playlist jQuery</title>
+  <style>
+
+</style>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<!--[if lt IE 9]>
-  <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-<div class="container">
-<div class="vidcontainer">
-<video id="myvid" >
-
-  Your browser does not support the video tag.
-  
-</video>
-
-        <div class="topControl">
-			<div class="progress">
-				<span class="bufferBar"></span>
-				<span class="timeBar"></span>
-			</div>
-			<div class="time">
-				<span class="current"></span> / 
-				<span class="duration"></span> 
-			</div>
-        </div>
-
-<div class="controllers">
-  	<button class="btnPlay" title="Play/Pause video"></button>
-  	<button class="prevvid disabled" title="Previous video"><i class="fa fa-step-forward fa-rotate-180"></i></button>
-    <button class="nextvid" title="Next video"><i class="fa fa-step-forward"></i></button>
-    <button class="sound sound2 btn" title="Mute/Unmute sound"></button>
-    <div class="volume" title="Set volume">
-			<span class="volumeBar"></span>
-	</div>
-    <button class="btnFS " style="float:right" title="full screen"></button>
-    <button class="btnspeed " style="float:right" title="Video speed"><i class="fa fa-gear"></i></button>
-    <ul class="speedcnt">
-    	<li class="spdx50">1.5</li>
-    	<li class="spdx25">1.25</li>
-    	<li class="spdx1 selected">Normal</li>
-    	<li class="spdx050">0.5</li>
-    </ul>
-	<button class="btnLight lighton " style="float:right" title="on/off light"><i class="fa fa-lightbulb-o"></i></button>
+<div class="container-fluid">
+  <div class="row">
+<div class="col-sm-8">
+    <video id="videoarea" controls="controls" poster="" src="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_1">Vod   </li>"></video>
 </div>
-<div class="ads">
-    	<span class="closeme fa fa-close"></span>
+    <div class="col-sm-4">
+<ul id="playlist">
+<!--    
+<li movieurl="http://html5videoformatconverter.com/data/images/happyfit2">Vod   </li>" moviesposter="http://html5videoformatconverter.com/data/images/screen.jpg">Happy Fit</li> -->
+<li movieurl="<li movieurl="http://video.eblinet.video/480/3">Vod   </li>">Le Chemin du Retour Introduction</li>
+<li movieurl="   ">Vod   </li>">    </li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_3">Vod   </li>">Episode 1 - Vous allez Voir</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_4">Vod   </li>" startt="114">Episode 1: Un grand jour</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_5">Vod   </li>">Episode 1 - Vous avez compris</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_6">Vod   </li>">Episode 1 - Langue en context</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_7">Vod   </li>">Episode 1 - With all extras</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_8">Vod   </li>">Episode 2 - Vous avez vu</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_9">Vod   </li>">Episode 2 - Vous avez vu</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_10">Vod   </li>">Episode 2 - Vous allez voir</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_11">Vod   </li>">Episode 2: Bonjour</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_12">Vod   </li>">Episode 2 - Vous avez compris</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_13">Vod   </li>">Episode 2 - Langue en context</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_14">Vod   </li>">Episode 2 - Vous avez vu </li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_15">Vod   </li>">Episode 3 - Vous avez vu</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_16">Vod   </li>">Episode 3 - Vous avez vu</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_17">Vod   </li>">Episode 3 - Vous allez voir</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_18">Vod   </li>">Episode 3: Le Médaillon</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_19">Vod   </li>">Episode 3 - Vous avez compris</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_20">Vod   </li>">Episode 3 - Langue en context</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_21">Vod   </li>">Episode 3 - Vous avez vu</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_22">Vod   </li>">Episode 4 - Vous avez vu</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_23">Vod   </li>">Episode 4 - Vous avez vu</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_24">Vod   </li>">Episode 4 - Vous allez voir</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_25">Vod   </li>">Episode 4: Une nouvelle vie à Paris</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_26">Vod   </li>">dvd 1 Chapter 26</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_27">Vod   </li>">dvd 1 Chapter 27</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_28">Vod   </li>">dvd 1 Chapter 28</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_29">Vod   </li>">dvd 1 Chapter 29</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_30">Vod   </li>">dvd 1 Chapter 30</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_31">Vod   </li>">dvd 1 Chapter 31</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_32">Vod   </li>">dvd 1 Chapter 32</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_33">Vod   </li>">dvd 1 Chapter 33</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_34">Vod   </li>">dvd 1 Chapter 34</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_35">Vod   </li>">dvd 1 Chapter 35</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_36">Vod   </li>">dvd 1 Chapter 36</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_37">Vod   </li>">dvd 1 Chapter 37</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_38">Vod   </li>">dvd 1 Chapter 38</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_39">Vod   </li>">dvd 1 Chapter 39</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_40">Vod   </li>">dvd 1 Chapter 40</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_41">Vod   </li>">dvd 1 Chapter 41</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_42">Vod   </li>">dvd 1 Chapter 42</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_43">Vod   </li>">dvd 1 Chapter 43</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_44">Vod   </li>">dvd 1 Chapter 44</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_45">Vod   </li>">dvd 1 Chapter 45</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_46">Vod   </li>">dvd 1 Chapter 46</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_47">Vod   </li>">dvd 1 Chapter 47</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_48">Vod   </li>">dvd 1 Chapter 48</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_1_49">Vod   </li>">dvd 1 Chapter 49</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_1">Vod   </li>">dvd 2 Chapter 1</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_2">Vod   </li>">dvd 2 Chapter 2</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_3">Vod   </li>">dvd 2 Chapter 3</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_4">Vod   </li>">dvd 2 Chapter 4</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_5">Vod   </li>">dvd 2 Chapter 5</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_5">Vod   </li>">dvd 2 Chapter 5</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_6">Vod   </li>">dvd 2 Chapter 6</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_7">Vod   </li>">dvd 2 Chapter 7</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_8">Vod   </li>">dvd 2 Chapter 8</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_9">Vod   </li>">dvd 2 Chapter 9</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_10">Vod   </li>">dvd 2 Chapter 10</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_11">Vod   </li>">dvd 2 Chapter 11</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_12">Vod   </li>">dvd 2 Chapter 12</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_13">Vod   </li>">dvd 2 Chapter 13</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_14">Vod   </li>">dvd 2 Chapter 14</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_15">Vod   </li>">dvd 2 Chapter 15</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_16">Vod   </li>">dvd 2 Chapter 16</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_17">Vod   </li>">dvd 2 Chapter 17</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_18">Vod   </li>">dvd 2 Chapter 18</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_19">Vod   </li>">dvd 2 Chapter 19</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_20">Vod   </li>">dvd 2 Chapter 20</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_21">Vod   </li>">dvd 2 Chapter 21</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_22">Vod   </li>">dvd 2 Chapter 22</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_23">Vod   </li>">dvd 2 Chapter 23</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_24">Vod   </li>">dvd 2 Chapter 24</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_25">Vod   </li>">dvd 2 Chapter 25</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_26">Vod   </li>">dvd 2 Chapter 26</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_27">Vod   </li>">dvd 2 Chapter 27</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_28">Vod   </li>">dvd 2 Chapter 28</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_29">Vod   </li>">dvd 2 Chapter 29</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_30">Vod   </li>">dvd 2 Chapter 30</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_31">Vod   </li>">dvd 2 Chapter 31</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_32">Vod   </li>">dvd 2 Chapter 32</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_33">Vod   </li>">dvd 2 Chapter 33</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_34">Vod   </li>">dvd 2 Chapter 34</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_35">Vod   </li>">dvd 2 Chapter 35</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_36">Vod   </li>">dvd 2 Chapter 36</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_37">Vod   </li>">dvd 2 Chapter 37</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_38">Vod   </li>">dvd 2 Chapter 38</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_39">Vod   </li>">dvd 2 Chapter 39</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_40">Vod   </li>">dvd 2 Chapter 40</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_41">Vod   </li>">dvd 2 Chapter 41</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_42">Vod   </li>">dvd 2 Chapter 42</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_43">Vod   </li>">dvd 2 Chapter 43</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_44">Vod   </li>">dvd 2 Chapter 44</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_45">Vod   </li>">dvd 2 Chapter 45</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_46">Vod   </li>">dvd 2 Chapter 46</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_47">Vod   </li>">dvd 2 Chapter 47</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_48">Vod   </li>">dvd 2 Chapter 48</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_49">Vod   </li>">dvd 2 Chapter 49</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_50">Vod   </li>">dvd 2 Chapter 50</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_51">Vod   </li>">dvd 2 Chapter 51</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_52">Vod   </li>">dvd 2 Chapter 52</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_53">Vod   </li>">dvd 2 Chapter 53</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_2_54">Vod   </li>">dvd 2 Chapter 54</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_1">Vod   </li>">dvd 3 Chapter 1</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_2">Vod   </li>">dvd 3 Chapter 2</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_3">Vod   </li>">dvd 3 Chapter 3</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_4">Vod   </li>">dvd 3 Chapter 4</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_5">Vod   </li>">dvd 3 Chapter 5</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_6">Vod   </li>">dvd 3 Chapter 6</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_7">Vod   </li>">dvd 3 Chapter 7</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_8">Vod   </li>">dvd 3 Chapter 8</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_9">Vod   </li>">dvd 3 Chapter 9</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_10">Vod   </li>">dvd 3 Chapter 10</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_11">Vod   </li>">dvd 3 Chapter 11</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_12">Vod   </li>">dvd 3 Chapter 12</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_13">Vod   </li>">dvd 3 Chapter 13</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_14">Vod   </li>">dvd 3 Chapter 14</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_15">Vod   </li>">dvd 3 Chapter 15</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_16">Vod   </li>">dvd 3 Chapter 16</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_17">Vod   </li>">dvd 3 Chapter 17</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_18">Vod   </li>">dvd 3 Chapter 18</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_19">Vod   </li>">dvd 3 Chapter 19</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_20">Vod   </li>">dvd 3 Chapter 20</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_21">Vod   </li>">dvd 3 Chapter 21</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_22">Vod   </li>">dvd 3 Chapter 22</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_23">Vod   </li>">dvd 3 Chapter 23</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_24">Vod   </li>">dvd 3 Chapter 24</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_25">Vod   </li>">dvd 3 Chapter 25</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_26">Vod   </li>">dvd 3 Chapter 26</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_27">Vod   </li>">dvd 3 Chapter 27</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_28">Vod   </li>">dvd 3 Chapter 28</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_29">Vod   </li>">dvd 3 Chapter 29</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_30">Vod   </li>">dvd 3 Chapter 30</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_31">Vod   </li>">dvd 3 Chapter 31</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_32">Vod   </li>">dvd 3 Chapter 32</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_33">Vod   </li>">dvd 3 Chapter 33</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_34">Vod   </li>">dvd 3 Chapter 34</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_35">Vod   </li>">dvd 3 Chapter 35</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_36">Vod   </li>">dvd 3 Chapter 36</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_37">Vod   </li>">dvd 3 Chapter 37</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_38">Vod   </li>">dvd 3 Chapter 38</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_39">Vod   </li>">dvd 3 Chapter 39</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_40">Vod   </li>">dvd 3 Chapter 40</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_41">Vod   </li>">dvd 3 Chapter 41</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_42">Vod   </li>">dvd 3 Chapter 42</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_43">Vod   </li>">dvd 3 Chapter 43</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_44">Vod   </li>">dvd 3 Chapter 44</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_45">Vod   </li>">dvd 3 Chapter 45</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_46">Vod   </li>">dvd 3 Chapter 46</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_47">Vod   </li>">dvd 3 Chapter 47</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_48">Vod   </li>">dvd 3 Chapter 48</li>
+<li movieurl="http://sms.pstcc.edu/ets/media/courses/fren1020/videos/dvd/debuts_dvd_3_49">Vod   </li>">Vod   </li>
 
+
+<li movieurl="http://video.eblinet.me/video/480/3.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/4.mp4">Vod   </li>">   Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/1.mp4">Vod   </li>">  Vod 1   </li>
+<li movieurl="http://video.eblinet.me/video/480/6.mp4">Vod   </li>">   Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/12.mp4">Vod   </li>">  Vod 1   </li>
+<li movieurl="http://video.eblinet.me/video/480/10.mp4">Vod   </li>">  Vod 1   </li>
+<li movieurl="http://video.eblinet.me/video/480/14.mp4">Vod   </li>">   Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/17.mp4">Vod   </li>">   Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/20.mp4">Vod   </li>">   Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/21.mp4">Vod   </li>">  Vod 1   </li>
+<li movieurl="http://video.eblinet.me/video/480/22.mp4">Vod   </li>">  Vod 1   </li>
+<li movieurl="http://video.eblinet.me/video/480/23.mp4">Vod   </li>">  Vod 1   </li>
+<li movieurl="http://video.eblinet.me/video/480/25.mp4">Vod   </li>">  Vod 1   </li>
+<li movieurl="http://video.eblinet.me/video/480/26.mp4">Vod   </li>">  Vod 1   </li>
+<li movieurl="http://video.eblinet.me/video/480/28.mp4">Vod   </li>">  Vod 1   </li>
+<li movieurl="http://video.eblinet.me/video/480/31.mp4">Vod   </li>">  Vod 1   </li>
+<li movieurl="http://video.eblinet.me/video/480/34.mp4">Vod   </li>">  Vod 1   </li>
+<li movieurl="http://video.eblinet.me/video/480/35.mp4">Vod   </li>">  Vod 1   </li>
+<li movieurl="http://video.eblinet.me/video/480/36.mp4">Vod   </li>">  Vod 1   </li>
+<li movieurl="http://video.eblinet.me/video/480/42.mp4">Vod   </li>">  Vod 1   </li>
+<li movieurl="http://video.eblinet.me/video/480/43.mp4">Vod   </li>">  Vod 1   </li>
+<li movieurl="http://video.eblinet.me/video/480/44.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/47.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/48.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/49.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/50.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/51.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/58.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/59.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/60.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/61.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/65.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/75.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/78.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/79.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/80.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/82.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/81.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/86.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/88.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/87.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/92.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/96.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/99.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/100.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/103.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/104.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/108.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/112.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/113.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/114.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/115.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/116.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/118.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/121.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/127.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/129.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/130.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/131.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/132.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/134.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/138.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/140.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/141.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/145.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/147.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/148.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/149.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/153.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/154.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/155.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/157.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/160.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/162.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/164.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/165.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/166.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/172.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/174.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/175.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/181.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/182.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/186.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/187.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/190.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/191.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/195.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/196.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/197.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/203.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/205.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/208.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/214.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/215.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/216.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/217.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/218.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/219.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/221.mp4">Vod   </li>">  Vod 1  </li>
+<li movieurl="http://video.eblinet.me/video/480/225.mp4">Vod   </li>">  Vod 1  </li>
+
+
+
+
+
+
+</ul>
 </div>
-<div class="bigplay" title="play the video"><i class="fa fa-play-circle-o"></i></div>
-<div class="loading"><i class="fa fa-spinner fa-spin"></i></div>
     </div>
-
-	<div class="videolist">
-		<nav class="vids">
-
-
-
-
-<a class="link" href="http://video.eblinet.me/video/480/3.mp4">Vod 1</a>
-<a class="link" href="http://video.eblinet.me/video/480/4.mp4">Vod 2</a>
-<a class="link" href="http://video.eblinet.me/video/480/1.mp4">Vod 3</a>
-<a class="link" href="http://video.eblinet.me/video/480/6.mp4">Vod 4</a>
-<a class="link" href="http://video.eblinet.me/video/480/12.mp4">Vod 5</a>
-<a class="link" href="http://video.eblinet.me/video/480/10.mp4">Vod 6</a>
-<a class="link" href="http://video.eblinet.me/video/480/14.mp4">Vod 7</a>
-<a class="link" href="http://video.eblinet.me/video/480/17.mp4">Vod 8</a>
-<a class="link" href="http://video.eblinet.me/video/480/20.mp4">Vod 9</a>
-<a class="link" href="http://video.eblinet.me/video/480/21.mp4">Vod 10</a>
-<a class="link" href="http://video.eblinet.me/video/480/22.mp4">Vod 11</a>
-<a class="link" href="http://video.eblinet.me/video/480/23.mp4">Vod 12</a>
-<a class="link" href="http://video.eblinet.me/video/480/25.mp4">Vod 13</a>
-<a class="link" href="http://video.eblinet.me/video/480/26.mp4">Vod 14</a>
-<a class="link" href="http://video.eblinet.me/video/480/28.mp4">Vod 15</a>
-<a class="link" href="http://video.eblinet.me/video/480/31.mp4">Vod 16</a>
-<a class="link" href="http://video.eblinet.me/video/480/34.mp4">Vod 17</a>
-<a class="link" href="http://video.eblinet.me/video/480/35.mp4">Vod 18</a>
-<a class="link" href="http://video.eblinet.me/video/480/36.mp4">Vod 19</a>
-<a class="link" href="http://video.eblinet.me/video/480/42.mp4">Vod 20</a>
-<a class="link" href="http://video.eblinet.me/video/480/43.mp4">Vod 21</a>
-<a class="link" href="http://video.eblinet.me/video/480/44.mp4">Vod 22</a>
-<a class="link" href="http://video.eblinet.me/video/480/47.mp4">Vod 23</a>
-<a class="link" href="http://video.eblinet.me/video/480/48.mp4">Vod 24</a>
-<a class="link" href="http://video.eblinet.me/video/480/49.mp4">Vod 25</a>
-<a class="link" href="http://video.eblinet.me/video/480/50.mp4">Vod 26</a>
-<a class="link" href="http://video.eblinet.me/video/480/51.mp4">Vod 27</a>
-<a class="link" href="http://video.eblinet.me/video/480/58.mp4">Vod 28</a>
-<a class="link" href="http://video.eblinet.me/video/480/59.mp4">Vod 29</a>
-<a class="link" href="http://video.eblinet.me/video/480/60.mp4">Vod 30</a>
-<a class="link" href="http://video.eblinet.me/video/480/61.mp4">Vod 31</a>
-<a class="link" href="http://video.eblinet.me/video/480/65.mp4">Vod 32</a>
-<a class="link" href="http://video.eblinet.me/video/480/75.mp4">Vod 33</a>
-<a class="link" href="http://video.eblinet.me/video/480/78.mp4">Vod 34</a>
-<a class="link" href="http://video.eblinet.me/video/480/79.mp4">Vod 35</a>
-<a class="link" href="http://video.eblinet.me/video/480/80.mp4">Vod 36</a>
-<a class="link" href="http://video.eblinet.me/video/480/82.mp4">Vod 37</a>
-<a class="link" href="http://video.eblinet.me/video/480/81.mp4">Vod 38</a>
-<a class="link" href="http://video.eblinet.me/video/480/86.mp4">Vod 39</a>
-<a class="link" href="http://video.eblinet.me/video/480/88.mp4">Vod 40</a>
-<a class="link" href="http://video.eblinet.me/video/480/87.mp4">Vod 41</a>
-<a class="link" href="http://video.eblinet.me/video/480/92.mp4">Vod 42</a>
-<a class="link" href="http://video.eblinet.me/video/480/96.mp4">Vod 43</a>
-<a class="link" href="http://video.eblinet.me/video/480/99.mp4">Vod 44</a>
-<a class="link" href="http://video.eblinet.me/video/480/100.mp4">Vod 45</a>
-<a class="link" href="http://video.eblinet.me/video/480/103.mp4">Vod 46</a>
-<a class="link" href="http://video.eblinet.me/video/480/104.mp4">Vod 47</a>
-<a class="link" href="http://video.eblinet.me/video/480/108.mp4">Vod 48</a>
-<a class="link" href="http://video.eblinet.me/video/480/112.mp4">Vod 49</a>
-<a class="link" href="http://video.eblinet.me/video/480/113.mp4">Vod 50</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-			
-		</nav>
-	</div>
 </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <!-- partial -->
-  <script  src="./script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>
