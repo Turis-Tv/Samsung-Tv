@@ -2,185 +2,45 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Video Playlist jQuery</title>
-  <style>
+  <title>Basic iFrame Multi-Video Player</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</style>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Pirata+One" rel="stylesheet"> <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.css'><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="container-fluid">
-  <div class="row">
-<div class="col-sm-8">
-    <video id="videoarea" controls="controls" poster="" src="http://video.eblinet.me/video/480/3.mp4">Vod   </li>"></video>
-</div>
-    <div class="col-sm-4">
-<ul id="playlist">
-<!--    
-<li movieurl="http://video.eblinet.me/video/480/3.mp4">Vod   </li>" moviesposter="http://html5videoformatconverter.com/data/images/screen.jpg">Vod 2</li> -->
-<li movieurl=" http://video.eblinet.me/video/480/3.mp4  ">Porn Vod 1</li>
-<li movieurl="http://video.eblinet.me/video/480/4.mp4">Porn Vod 2</li>
-<li movieurl="http://video.eblinet.me/video/480/1.mp4">Porn Vod 3</li>
-<li movieurl="http://video.eblinet.me/video/480/6.mp4">Porn Vod 4</li>
-<li movieurl="http://video.eblinet.me/video/480/12.mp4 ">Porn Vod 5</li>
-<li movieurl="http://video.eblinet.me/video/480/10.mp4 ">Porn Vod 6</li>
-<li movieurl="http://video.eblinet.me/video/480/14.mp4 ">Porn Vod 7</li> 
-<li movieurl="http://video.eblinet.me/video/480/17.mp4 ">Porn Vod 8</li> 
-<li movieurl="http://video.eblinet.me/video/480/20.mp4 ">Porn Vod 9</li> 
-<li movieurl="http://video.eblinet.me/video/480/21.mp4 ">Porn Vod 10</li> 
-<li movieurl="http://video.eblinet.me/video/480/22.mp4 ">Porn Vod 12</li> 
-<li movieurl="http://video.eblinet.me/video/480/23.mp4 ">Porn Vod 13</li> 
-<li movieurl="http://video.eblinet.me/video/480/25.mp4 ">Porn Vod 14</li> 
-<li movieurl="http://video.eblinet.me/video/480/26.mp4 ">Porn Vod 15</li> 
-<li movieurl="http://video.eblinet.me/video/480/28.mp4 ">Porn Vod 16</li> 
-<li movieurl="http://video.eblinet.me/video/480/31.mp4 ">Porn Vod 17</li> 
-<li movieurl="http://video.eblinet.me/video/480/34.mp4 ">Porn Vod 18</li> 
-<li movieurl="http://video.eblinet.me/video/480/35.mp4 ">Porn Vod 19</li> 
-<li movieurl="http://video.eblinet.me/video/480/36.mp4 ">Porn Vod 20</li> 
-<li movieurl="http://video.eblinet.me/video/480/42.mp4 ">Porn Vod 21</li> 
-<li movieurl="http://video.eblinet.me/video/480/43.mp4 ">Porn Vod 22</li> 
-<li movieurl="http://video.eblinet.me/video/480/44.mp4 ">Porn Vod 23</li> 
-<li movieurl="http://video.eblinet.me/video/480/47.mp4 ">Porn Vod 24</li> 
-<li movieurl="http://video.eblinet.me/video/480/48.mp4 ">Porn Vod 25</li> 
-<li movieurl="http://video.eblinet.me/video/480/49.mp4 ">Porn Vod 26</li> 
-<li movieurl="http://video.eblinet.me/video/480/50.mp4 ">Porn Vod 27</li> 
-<li movieurl="http://video.eblinet.me/video/480/51.mp4 ">Porn Vod 28</li> 
-<li movieurl="http://video.eblinet.me/video/480/58.mp4 ">Porn Vod 29</li> 
-<li movieurl="http://video.eblinet.me/video/480/59.mp4 ">Porn Vod 30</li> 
-<li movieurl="http://video.eblinet.me/video/480/60.mp4 ">Porn Vod 31</li> 
-<li movieurl="http://video.eblinet.me/video/480/61.mp4 ">Porn Vod 32</li> 
-<li movieurl="http://video.eblinet.me/video/480/65.mp4 ">Porn Vod 33</li> 
-<li movieurl="http://video.eblinet.me/video/480/75.mp4 ">Porn Vod 34</li> 
-<li movieurl="http://video.eblinet.me/video/480/78.mp4 ">Porn Vod 35</li> 
-<li movieurl="http://video.eblinet.me/video/480/79.mp4 ">Porn Vod 36</li> 
-<li movieurl="http://video.eblinet.me/video/480/80.mp4 ">Porn Vod 37</li> 
-<li movieurl="http://video.eblinet.me/video/480/82.mp4 ">Porn Vod 38</li> 
-<li movieurl="http://video.eblinet.me/video/480/81.mp4 ">Porn Vod 39</li> 
-<li movieurl="http://video.eblinet.me/video/480/86.mp4 ">Porn Vod 40</li>
-<li movieurl="http://video.eblinet.me/video/480/88.mp4 ">Porn Vod 41</li> 
-<li movieurl="http://video.eblinet.me/video/480/87.mp4 ">Porn Vod 42</li> 
-<li movieurl="http://video.eblinet.me/video/480/92.mp4 ">Porn Vod 43</li> 
-<li movieurl="http://video.eblinet.me/video/480/96.mp4 ">Porn Vod 44</li> 
-<li movieurl="http://video.eblinet.me/video/480/99.mp4 ">Porn Vod 45</li> 
-<li movieurl="http://video.eblinet.me/video/480/100.mp4 ">Porn Vod 46</li> 
-<li movieurl="http://video.eblinet.me/video/480/103.mp4 ">Porn Vod 47</li> 
-<li movieurl="http://video.eblinet.me/video/480/104.mp4 ">Porn Vod 48</li> 
-<li movieurl="http://video.eblinet.me/video/480/108.mp4 ">Porn Vod 49</li> 
-<li movieurl="http://video.eblinet.me/video/480/112.mp4 ">Porn Vod 50</li> 
-<li movieurl="http://video.eblinet.me/video/480/113.mp4 ">Porn Vod 51</li> 
-<li movieurl="http://video.eblinet.me/video/480/114.mp4 ">Porn Vod 52</li> 
-<li movieurl="http://video.eblinet.me/video/480/115.mp4 ">Porn Vod 53</li> 
-<li movieurl="http://video.eblinet.me/video/480/116.mp4 ">Porn Vod 54</li> 
-<li movieurl="http://video.eblinet.me/video/480/118.mp4 ">Porn Vod 55</li> 
-<li movieurl="http://video.eblinet.me/video/480/121.mp4 ">Porn Vod 56</li> 
-<li movieurl="http://video.eblinet.me/video/480/127.mp4 ">Porn Vod 57</li> 
-<li movieurl="http://video.eblinet.me/video/480/129.mp4 ">Porn Vod 58</li> 
-<li movieurl="http://video.eblinet.me/video/480/130.mp4 ">Porn Vod 59</li> 
-<li movieurl="http://video.eblinet.me/video/480/131.mp4 ">Porn Vod 60</li> 
-<li movieurl="http://video.eblinet.me/video/480/132.mp4 ">Porn Vod 61</li> 
-<li movieurl="http://video.eblinet.me/video/480/134.mp4 ">Porn Vod 62</li> 
-<li movieurl="http://video.eblinet.me/video/480/138.mp4 ">Porn Vod 63</li> 
-<li movieurl="http://video.eblinet.me/video/480/140.mp4 ">Porn Vod 64</li> 
-<li movieurl="http://video.eblinet.me/video/480/141.mp4 ">Porn Vod 65</li> 
-<li movieurl="http://video.eblinet.me/video/480/145.mp4 ">Porn Vod 66</li> 
-<li movieurl="http://video.eblinet.me/video/480/147.mp4 ">Porn Vod 67</li> 
-<li movieurl="http://video.eblinet.me/video/480/148.mp4 ">Porn Vod 68</li> 
-<li movieurl="http://video.eblinet.me/video/480/149.mp4 ">Porn Vod 69</li> 
-<li movieurl="http://video.eblinet.me/video/480/153.mp4 ">Porn Vod 70</li> 
-<li movieurl="http://video.eblinet.me/video/480/154.mp4 ">Porn Vod 71</li> 
-<li movieurl="http://video.eblinet.me/video/480/155.mp4 ">Porn Vod 72</li> 
-<li movieurl="http://video.eblinet.me/video/480/157.mp4 ">Porn Vod 73</li> 
-<li movieurl="http://video.eblinet.me/video/480/160.mp4 ">Porn Vod 74</li> 
-<li movieurl="http://video.eblinet.me/video/480/162.mp4 ">Porn Vod 75</li> 
-<li movieurl="http://video.eblinet.me/video/480/164.mp4 ">Porn Vod 76</li> 
-<li movieurl="http://video.eblinet.me/video/480/165.mp4 ">Porn Vod 77</li> 
-<li movieurl="http://video.eblinet.me/video/480/166.mp4 ">Porn Vod 78</li> 
-<li movieurl="http://video.eblinet.me/video/480/172.mp4 ">Porn Vod 79</li> 
-<li movieurl="http://video.eblinet.me/video/480/174.mp4 ">Porn Vod 80</li> 
-<li movieurl="http://video.eblinet.me/video/480/175.mp4 ">Porn Vod 81</li> 
-<li movieurl="http://video.eblinet.me/video/480/181.mp4 ">Porn Vod 82</li> 
-<li movieurl="http://video.eblinet.me/video/480/182.mp4 ">Porn Vod 83</li> 
-<li movieurl="http://video.eblinet.me/video/480/186.mp4 ">Porn Vod 84</li> 
-<li movieurl="http://video.eblinet.me/video/480/187.mp4 ">Porn Vod 85</li> 
-<li movieurl="http://video.eblinet.me/video/480/190.mp4 ">Porn Vod 86</li> 
-<li movieurl="http://video.eblinet.me/video/480/191.mp4 ">Porn Vod 87</li> 
-<li movieurl="http://video.eblinet.me/video/480/195.mp4 ">Porn Vod 88</li> 
-<li movieurl="http://video.eblinet.me/video/480/196.mp4 ">Porn Vod 89</li> 
-<li movieurl="http://video.eblinet.me/video/480/197.mp4 ">Porn Vod 90</li> 
-<li movieurl="http://video.eblinet.me/video/480/203.mp4 ">Porn Vod 91</li> 
-<li movieurl="http://video.eblinet.me/video/480/205.mp4 ">Porn Vod 92</li> 
-<li movieurl="http://video.eblinet.me/video/480/208.mp4 ">Porn Vod 93</li> 
-<li movieurl="http://video.eblinet.me/video/480/214.mp4 ">Porn Vod 94</li> 
-<li movieurl="http://video.eblinet.me/video/480/215.mp4 ">Porn Vod 95</li> 
-<li movieurl="http://video.eblinet.me/video/480/216.mp4 ">Porn Vod 96</li> 
-<li movieurl="http://video.eblinet.me/video/480/217.mp4 ">Porn Vod 97</li> 
-<li movieurl="http://video.eblinet.me/video/480/218.mp4 ">Porn Vod 98</li> 
-<li movieurl="http://video.eblinet.me/video/480/219.mp4 ">Porn Vod 99</li> 
-<li movieurl="http://video.eblinet.me/video/480/221.mp4 ">Porn Vod 100</li> 
-<li movieurl="http://video.eblinet.me/video/480/225.mp4 ">Porn Vod 101</li> 
-<li movieurl="http://video.eblinet.me/video/480/227.mp4 ">Porn Vod 102</li> 
-<li movieurl="http://video.eblinet.me/video/480/228.mp4 ">Porn Vod 103</li> 
-<li movieurl="http://video.eblinet.me/video/480/234.mp4 ">Porn Vod 104</li> 
-<li movieurl="http://video.eblinet.me/video/480/237.mp4 ">Porn Vod 105</li> 
-<li movieurl="http://video.eblinet.me/video/480/238.mp4 ">Porn Vod 106</li> 
-<li movieurl="http://video.eblinet.me/video/480/239.mp4 ">Porn Vod 107</li> 
-<li movieurl="http://video.eblinet.me/video/480/240.mp4 ">Porn Vod 108</li> 
-<li movieurl="http://video.eblinet.me/video/480/243.mp4 ">Porn Vod 109</li> 
-<li movieurl="http://video.eblinet.me/video/480/245.mp4 ">Porn Vod 110</li> 
-<li movieurl="http://video.eblinet.me/video/480/247.mp4 ">Porn Vod 111</li> 
-<li movieurl="http://video.eblinet.me/video/480/249.mp4 ">Porn Vod 112</li> 
-<li movieurl="http://video.eblinet.me/video/480/252.mp4 ">Porn Vod 113</li> 
-<li movieurl="http://video.eblinet.me/video/480/253.mp4 ">Porn Vod 114</li> 
-<li movieurl="http://video.eblinet.me/video/480/254.mp4 ">Porn Vod 115</li> 
-<li movieurl="http://video.eblinet.me/video/480/256.mp4 ">Porn Vod 116</li> 
-<li movieurl="http://video.eblinet.me/video/480/258.mp4 ">Porn Vod 117</li> 
-<li movieurl="http://video.eblinet.me/video/480/260.mp4 ">Porn Vod 118</li> 
-<li movieurl="http://video.eblinet.me/video/480/261.mp4 ">Porn Vod 119</li> 
-<li movieurl="http://video.eblinet.me/video/480/262.mp4 ">Porn Vod 120</li> 
-<li movieurl="http://video.eblinet.me/video/480/270.mp4 ">Porn Vod 121</li> 
-<li movieurl="http://video.eblinet.me/video/480/276.mp4 ">Porn Vod 122</li> 
-<li movieurl="http://video.eblinet.me/video/480/275.mp4 ">Porn Vod 123</li> 
-<li movieurl="http://video.eblinet.me/video/480/280.mp4 ">Porn Vod 124</li> 
-<li movieurl="http://video.eblinet.me/video/480/281.mp4 ">Porn Vod 125</li> 
-<li movieurl="http://video.eblinet.me/video/480/282.mp4 ">Porn Vod 126</li> 
-<li movieurl="http://video.eblinet.me/video/480/284.mp4 ">Porn Vod 127</li> 
-<li movieurl="http://video.eblinet.me/video/480/283.mp4 ">Porn Vod 128</li> 
-<li movieurl="http://video.eblinet.me/video/480/286.mp4 ">Porn Vod 129</li> 
-<li movieurl="http://video.eblinet.me/video/480/289.mp4 ">Porn Vod 130</li> 
-<li movieurl="http://video.eblinet.me/video/480/290.mp4 ">Porn Vod 131</li> 
-<li movieurl="http://video.eblinet.me/video/480/292.mp4 ">Porn Vod 132</li> 
-<li movieurl="http://video.eblinet.me/video/480/294.mp4 ">Porn Vod 133</li>              
-<li movieurl="http://video.eblinet.me/video/480/293.mp4 ">Porn Vod 134</li> 
-<li movieurl="http://video.eblinet.me/video/480/295.mp4 ">Porn Vod 135</li> 
-<li movieurl="http://video.eblinet.me/video/480/296.mp4 ">Porn Vod 136</li> 
-<li movieurl="http://video.eblinet.me/video/480/300.mp4 ">Porn Vod 137</li> 
-<li movieurl="http://video.eblinet.me/video/480/301.mp4 ">Porn Vod 138</li> 
-<li movieurl="http://video.eblinet.me/video/480/305.mp4 ">Porn Vod 139</li> 
-<li movieurl="http://video.eblinet.me/video/480/310.mp4 ">Porn Vod 140</li> 
-<li movieurl="http://video.eblinet.me/video/480/312.mp4 ">Porn Vod 141</li> 
-<li movieurl="http://video.eblinet.me/video/480/313.mp4 ">Porn Vod 142</li> 
-<li movieurl="http://video.eblinet.me/video/480/314.mp4 ">Porn Vod 143</li> 
-<li movieurl="http://video.eblinet.me/video/480/317.mp4 ">Porn Vod 144</li> 
-<li movieurl="http://video.eblinet.me/video/480/318.mp4 ">Porn Vod 145</li> 
-<li movieurl="http://video.eblinet.me/video/480/319.mp4 ">Porn Vod 146</li> 
-<li movieurl="http://video.eblinet.me/video/480/320.mp4 ">Porn Vod 147</li> 
-<li movieurl="http://video.eblinet.me/video/480/322.mp4 ">Porn Vod 148</li>  
-<li movieurl="http://video.eblinet.me/video/480/330.mp4 ">Porn Vod 149</li> 
-<li movieurl="http://video.eblinet.me/video/480/333.mp4 ">Porn Vod 150</li> 
-<li movieurl="http://video.eblinet.me/video/480/335.mp4 ">Porn Vod 151</li> 
-<li movieurl="http://video.eblinet.me/video/480/336.mp4 ">Porn Vod 152</li> 
-<li movieurl="http://video.eblinet.me/video/480/339.mp4 ">Porn Vod 153</li>
-
-
-
-</ul>
-</div>
+<div class="video-player">
+  <div class="video-header">
+    <div class="branding"><small></small>
+  
     </div>
+    <div class="autoplay-select">
+      <h2>Autoplay</h2>
+      <div class="autoplay-background">
+        <div class="autoplay-toggle"></div>
+      </div>
+    </div>
+  </div>
+  <div class="video-featured">
+    <div class="flex-video">
+      <iframe class="video-frame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+    </div>
+  </div>
+  <ul class="video-list mobile-list hide">
+    <li class="active-video" data-url="https://www.youtube.com/embed/ouuCjEjyKVI">Show Tv</li>
+    <li data-url="https://www.youtube.com/embed/gIdaTOTzZuw">Atv</li>
+    <li data-url="https://www.youtube.com/embed/k6kyt0z40Fg">Cnn</li>
+    <li data-url="https://www.youtube.com/embed/6BX-NUzBSp8">Haber Global</li>
+    <li data-url="https://www.youtube.com/embed/erCmQucF6_U">A haber </li>
+    <li data-url="https://www.youtube.com/embed/5tud4XFxuIY">Müge Anli Canli</li>
+    <li data-url="https://www.youtube.com/embed/hQXmZUpN0eY">Esra Erol Canli</li>
+    <li data-url="https://www.youtube.com/embed/hfx8H7YrmTw">Kemal Sunal</li>
+  </ul>
+  <p class="video-list-trigger"><i class="zmdi zmdi-view-list-alt"></i></p>
 </div>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>
