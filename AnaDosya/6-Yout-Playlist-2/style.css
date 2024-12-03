@@ -14,7 +14,7 @@
 }
 
 .cxiv-container iframe {
-  width: 500px;
+  width: 350px;
   border: #c0c0c0 solid 1px;
   margin-right: 10px;
   background-color: #000000;
@@ -22,8 +22,8 @@
 }
 
 .cxiv-menu {
-  width: 500px;
-  height: 360px;
+  width: 350px;
+  height: 250px;
   border: #c0c0c0 solid 1px;
   overflow-y: auto;
   display: grid;
