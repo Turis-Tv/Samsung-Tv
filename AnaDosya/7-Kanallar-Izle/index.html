@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by hasan</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPTV Player with Logo</title>
+<script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #3498db, #8e44ad);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .video-container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .channel-info {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .channel-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    display: none;
+  }
+
+  .channel-list.active {
+    display: block;
+  }
+
+  .channel-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .channel-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .toggle-button {
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .player-frame {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="video-container">
+    <div id="player" class="player-frame"></div>
+    <div class="channel-info" id="channelInfo">
+      Turis Tv Hayirli Seyirler Diler Ulusal Kanallar
+    </div>
+  </div>
+  <ul class="channel-list" id="channelList">
+    <li class="channel-item" data-url="https://alt.xtream-ie.org/r8E7WzEjY/LLJwdV9mB/7eyJ1cmwiOiJodHRwOi8vaHcxLmplbXR2LmNvbS9hcHAvQVRWSEQvcGxheWxpc3QubTN1OCIsImlkIjozNzAzfQ%3D%3D/fast" data-name="Atv">Atv</li>
+    <li class="channel-item" data-url="https://dogus-live.daioncdn.net/startv/startv.m3u8" data-name="Star Tv">Star Tv</li>
+    <li class="channel-item" data-url="https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8" data-name="Kanal 7">Kanal 7</li>
+    <li class="channel-item" data-url="https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?app=tv8_web&ce=3" data-name="Tv 8">Tv 8</li>
+    <!-- Add more channels here -->
+  </ul>
+  <div class="toggle-button" id="toggleButton">Kanallar Tikla</div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var player = new Clappr.Player({
+      source: 'https://alaraby.cdn.octivid.com/alaraby/smil:alaraby.stream.smil/chunklist.m3u8',
+      parentId: '#player',
+      autoPlay: true,
+      width: '150%',
+      height: '20.25vw', // 16:9 aspect ratio
+    });
+
+    var channelItems = document.querySelectorAll('.channel-item');
+    channelItems.forEach(function(item) {
+      item.addEventListener('click', function() {
+        var channelUrl = this.getAttribute('data-url');
+        var channelName = this.getAttribute('data-name');
+        player.load(channelUrl);
+        player.play();
+        document.getElementById('channelList').classList.remove('active');
+        document.getElementById('channelInfo').textContent = 'You are now watching ' + channelName;
+      });
+    });
+
+    var toggleButton = document.getElementById('toggleButton');
+    var channelList = document.getElementById('channelList');
+    toggleButton.addEventListener('click', function() {
+      channelList.classList.toggle('active');
+    });
+  });
+</script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
