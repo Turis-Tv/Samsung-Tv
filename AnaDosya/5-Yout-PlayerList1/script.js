@@ -1,16 +1,21 @@
-$(function(){
-  var youtubeUrl = "https://www.youtube.com/embed/" + $('#youtubevideotabs li:first-child').attr('youtubeid') + "?rel=0";
-  $('#youtubeplayer iframe').attr('src',youtubeUrl);
+(function($) {
+  // Find each player on the page and set it up.
+  $(".cxiv-container").each(function() {
+    var player = $(this);
+    
+    // Get menu item elements and calculate height of each.
+    var menuItems = player.find(".cxiv-menu a");
+
+    // Set default title to the first video menu title
+    player.find(".cxiv-title").text(menuItems.eq(0).text());
   
-  $('#youtubevideotabs li').click(function(){
-    youtubeUrl = "https://www.youtube.com/embed/"+ $(this).attr('youtubeid') +"?rel=0";
-    $('#youtubeplayer iframe').attr('src',youtubeUrl);    
-  });  
-  
-  $("#youtubevideotabs").mCustomScrollbar({
-    scrollButtons:{
-      enable:true
-    },
-		theme:"dark"
+    menuItems.on("click", function(event) {
+      event.preventDefault();
+      
+      var thisItem = $(this);
+      var closestContainer = thisItem.closest(".cxiv-container");
+      closestContainer.find("iframe").attr("src", thisItem.attr("href"));
+      closestContainer.find(".cxiv-title").text(thisItem.text());
+    });
   });
-});
+})( jQuery );

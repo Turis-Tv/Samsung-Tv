@@ -2,33 +2,184 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Video Player - Example</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>PLAYLIST </title>
+  
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="cxiv-container">
-   <div class="cxiv-title">Video Title</div>
-  
-   <!-- Player Window -->
-   <iframe src="https://player.vimeo.com/video/23106251?api=1&amp;player_id=main-video" width="640" height="360" allowfullscreen="" frameborder="0"></iframe>
-  
-   <!-- Player menu list. Add/remove anchor tags to add/remove video choices -->
-   <div class="cxiv-menu">
-      <a href="https://video1.tizam.cc/vk/PlanteContre1.mp4">Turis 100</a>
-      <a href="https://video2.tizam.cc/films/Black-and-White-14.mp4">Turis 2</a>
-      <a href="https://video1.tizam.cc/films/BlackWorm.mp4">Turis 3</a>
-      <a href="https://video1.tizam.cc/old_films/AuPair.mp4">Turis 4</a>
-      <a href="https://video1.tizam.cc/films/shlyuhi_novoj_volny_03.mp4">Turis 5</a>
-      <a href="https://video1.tizam.cc/top/CappuccettoRosso.mp4">Turis 6</a>
-      <a href="https://video1.tizam.cc/films/FlamencoEcstasy.mp4">Turis 7</a>
-   </div>
-<br>
-   <button type="button" onclick="window.location.href='../index.html'" class="tacobell">Ana Sayfa!</button>
-</div>
-<!-- partial -->
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Playlist with Glowing Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1E90FF; /* Arka plan rengi mavi */
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow-x: hidden;
+        }
 
+        .header {
+            background-color: #000;
+            padding: 10px;
+            position: relative;
+        }
+
+        .header img {
+            height: 50px;
+            transition: transform 0.5s ease;
+        }
+
+        .header img:hover {
+            transform: scale(1.1);
+        }
+
+        .header .menu-icon {
+            float: right;
+            font-size: 30px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .header .menu-icon:hover {
+            color: #ccc;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        h2 {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.5em;
+            margin: 20px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .video {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 80%;
+            border-radius: 15px;
+            margin: auto;
+            background: #000;
+            animation: slideIn 1s ease-in-out;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        .video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+
+        .video:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px auto;
+        }
+
+        .playlist-item {
+            background-color: #444;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Kırmızı parıltı*/
+            animation: glow 1.5s infinite alternate;
+        }
+
+        .playlist-item:hover {
+            background-color: #555;
+        }
+
+        .playlist-item.active {
+            background-color: #777;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Kırmızı parıltı */
+            }
+            to {
+                box-shadow: 0 0 20px rgba(255, 0, 0, 1); /* Kırmızı parıltı */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://via.placeholder.com/150" alt="Animation 101 Logo">
+        <div class="menu-icon">☰</div>
+    </div>
+
+    <div class="content">
+        <h2>YouTube Video Playlist</h2>
+        <div class="video" id="video-container">
+            <iframe id="youtube-player" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="button-container" id="playlist">
+            <button class="playlist-item" data-video-id="TDrxlhhhHnQ">Video 1</button>
+            <button class="playlist-item" data-video-id="I8ldsojiW8w">Video 2</button>
+            <button class="playlist-item" data-video-id="65qjctv4nL8">Video 3</button>
+            <button class="playlist-item" data-video-id="lTXn6CvSZWw">Video 4</button>
+            <button class="playlist-item" data-video-id="hx4_ZVgiZbg">Video 5</button>
+            <button class="playlist-item" data-video-id="EAWzd_lS4Ns">Video 6</button>
+        </div>
+    </div>
+
+    <script>
+        const youtubePlayer = document.getElementById('youtube-player');
+        const playlistItems = document.querySelectorAll('.playlist-item');
+
+        playlistItems.forEach(item => {
+            item.addEventListener('click', function() {
+                playlistItems.forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+                const videoId = this.getAttribute('data-video-id');
+                youtubePlayer.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            });
+        });
+
+        // Set the first video as active
+        playlistItems[0].classList.add('active');
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
 </body>
 </html>
