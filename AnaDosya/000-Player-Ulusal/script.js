@@ -3,10 +3,7 @@ const channels = [
     channelName: "Atv",
     src: "https://tgn.bozztv.com/trn03/gt-atv-tv/tracks-v1a1/mono.m3u8 ",
   },
-  {
-    channelName: "Atv | a",
-    src: "https://tgn.bozztv.com/trn03/gt-atv-tv/tracks-v1a1/mono.m3u8 ",
-  },
+
     {
     channelName: "Atv | b",
     src: "https://yayin2.canlitv.fun/livetv/atv.stream/master.m3u8",
@@ -15,10 +12,7 @@ const channels = [
     channelName: "Atv | c",
     src: "https://c.fulltvizle.com/aytv/index.m3u8 ",
   },
-    {
-    channelName: "Atv | d",
-    src: "https://tgn.bozztv.com/trn03/gt-atv-tv/tracks-v1a1/mono.m3u8 ",
-  },
+
     {
     channelName: "Atv | e",
     src: "https://tgn.bozztv.com/dvrfl05/gin-atvavrupa/tracks-v1a1/mono.m3u8 ",
@@ -36,10 +30,7 @@ const channels = [
     channelName: "Tv8 | a  ",
     src: "https://yayin2.canlitv.fun/livetv/tv8.stream/master.m3u8  ",
   },
-  {
-    channelName: "Tv8 | b  ",
-    src: "https://tv8-live.daioncdn.net/tv8/tv8.m3u8  ",
-  },
+
   {
     channelName: "Tv8 | c  ",
     src: "https://yayin2.canlitv.fun/livetv/tv8.stream/master.m3u8  ",
@@ -105,10 +96,7 @@ const channels = [
     channelName: "Trt 1 | h",
     src: "https://yayin2.canlitv.fun/livetv/trt1.stream/master.m3u8  ",
   },
-     {
-    channelName: "Trt 1 | i",
-    src: "https://c.fulltvizle.com/trt1/index.m3u8  ",
-  },
+
      {
     channelName: "Trt 1 | j",
     src: "https://helga.iptv2022.com/trt_1/index.m3u8  ",
@@ -137,22 +125,13 @@ const channels = [
     channelName: "Star Tv | e",
     src: "https://c.fulltvizle.com/star/index.m3u8  ",
   },
-     {
-    channelName: "Star Tv | f",
-    src: "https://dogus-live.daioncdn.net/startv/startv.m3u8  ",
-  },
-     {
-    channelName: "Star Tv | g",
-    src: "https://c.fulltvizle.com/star/index.m3u8  ",
-  },
+
+
      {
     channelName: "Star Tv | h",
     src: " https://tgn.bozztv.com/trn03/gt-eurostar/tracks-v1a1/mono.m3u8 ",
   },
-     {
-    channelName: "Show Tv | a",
-    src: "https://ciner-live.daioncdn.net/showtv/showtv.m3u8  ",
-  },
+
      {
     channelName: "Show Tv | b",
     src: "https://tgn.bozztv.com/trn03/gt-show-tv/tracks-v1a1/mono.m3u8  ",
@@ -185,10 +164,7 @@ const channels = [
     channelName: "Show Tv | g",
     src: "https://ciner-live.daioncdn.net/showtv/showtv.m3u8 ",
   },
-  {
-    channelName: "Show plus",
-    src: " http://str.yodacdn.net/showplus/index.m3u8",
-  },
+
   {
     channelName: "Show plus | a",
     src: "https://ssh101.bozztv.com/ssh101/showplus/chunks.m3u8 ",
@@ -217,10 +193,7 @@ const channels = [
     channelName: "Kanal 7 | e",
     src: "https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8 ",
   },
-  {
-    channelName: "Kanal 7 | f",
-    src: "https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8 ",
-  },
+
  {
     channelName: "360 Tv",
     src: "https://turkmedya-live.ercdn.net/tv360/tv360.m3u8 ",
@@ -230,10 +203,7 @@ const channels = [
     src: "https://tgn.bozztv.com/dvrfl05/gin-sky360/tracks-v1a1/mono.m3u8 ",
   },
 
-  {
-    channelName: "360 Tv | b",
-    src: "https://turkmedya-live.ercdn.net/tv360/tv360.m3u8 ",
-  },
+
 
   {
     channelName: "360 Tv | c  ",
@@ -263,10 +233,7 @@ const channels = [
     channelName: "Now tv | b  ",
     src: " https://c.fulltvizle.com/flash/index.m3u8 ",
   },
-  {
-    channelName: "Now tv | c  ",
-    src: "https://tgn.bozztv.com/dvrfl05/gin-flashtv/tracks-v1a1/mono.m3u8  ",
-  },
+
   {
     channelName: "Now tv | d  ",
     src: " https://yayin2.canlitv.fun/livetv/foxtv.stream/master.m3u8 ",
@@ -291,10 +258,7 @@ const channels = [
     channelName: "Now tv | i  ",
     src: "https://yayin2.canlitv.fun/livetv/foxtv.stream/master.m3u8 ",
   },
-  {
-    channelName: " Now tv | j ",
-    src: "https://c.fulltvizle.com/fox/index.m3u8  ",
-  },
+
   {
     channelName: "Now tv | f  ",
     src: "https://yayin2.canlitv.fun/livetv/halktv.stream/master.m3u8  ",
@@ -339,10 +303,7 @@ const channels = [
     channelName: "Trt Haber  ",
     src: " https://tv-trthaber.medya.trt.com.tr/master.m3u8 ",
   },
-  {
-    channelName: "Trt arabia  ",
-    src: "https://tv-trtarabi.medya.trt.com.tr/master.m3u8  ",
-  },
+
   {
     channelName: "Trt avaz  ",
     src: "https://tv-trtavaz.medya.trt.com.tr/master_720.m3u8  ",
@@ -403,10 +364,7 @@ const channels = [
     channelName: "Trt spor  ",
     src: "https://yayin2.canlitv.fun/livetv/trtspor.stream/master.m3u8  ",
   },
-  {
-    channelName: " Trt arapça ",
-    src: " https://tgn.bozztv.com/dvrfl05/gin-trtarapca/tracks-v1a1/mono.m3u8 ",
-  },
+
   {
     channelName: " Trt belgesel ",
     src: "https://tgn.bozztv.com/dvrfl05/gin-trtbelgesel/tracks-v1a1/mono.m3u8  ",
@@ -415,10 +373,7 @@ const channels = [
     channelName: "Trt haber  ",
     src: " https://tgn.bozztv.com/dvrfl05/gin-trthaber/tracks-v1a1/mono.m3u8 ",
   },
-  {
-    channelName: "Trt 4k  ",
-    src: "https://trn03.tulix.tv/gt-trt4k/index.m3u8  ",
-  },
+
   {
     channelName: "Trt Turk ",
     src: " https://tv-trtturk.medya.trt.com.tr/master_720.m3u8 ",
@@ -464,10 +419,7 @@ const channels = [
     channelName: "Kanal D | d ",
     src: "https://helga.iptv2022.com/kanal_d/index.m3u8  ",
   },
-     {
-    channelName: "Kanal D | e ",
-    src: "https://yayin2.canlitv.fun/livetv/kanald.stream/master.m3u8  ",
-  },
+
   {
     channelName: "Euro D  ",
     src: "https://tgn.bozztv.com/dvrfl05/gin-eurod/tracks-v1a1/mono.m3u8  ",
@@ -508,10 +460,7 @@ const channels = [
     channelName: "Teve 2  ",
     src: "https://demiroren-live.daioncdn.net/teve2/teve2.m3u8  ",
   },
-  {
-    channelName: "Teve 2 | a ",
-    src: "https://demiroren-live.daioncdn.net/teve2/teve2.m3u8  ",
-  },
+
   {
     channelName: " Teve 2 | b ",
     src: "https://helga.iptv2022.com/teve_2/index.m3u8  ",
@@ -598,10 +547,7 @@ const channels = [
     channelName: "Bein Spor 3 ",
     src: "https://tgn.bozztv.com/dvrfl05/gin-beinsportshaber/tracks-v1a1/mono.m3u8  ",
   },
-     {
-    channelName: "Bein Spor ",
-    src: "https://sette.523506e0a86d39c0.click/i/kopruluu55.github.io/602/playlist.m3u8 ",
-  },
+
      {
     channelName: "Az tv ",
     src: " https://tgn.bozztv.com/dvrfl05/gin-aztvhd/tracks-v1a1/mono.m3u8  ",
@@ -698,10 +644,7 @@ const channels = [
     channelName: "Powertv ",
     src: "https://livetv.powerapp.com.tr/powerTV/powerhd.smil/master.m3u8  ",
   },
-  {
-    channelName: "Nr1 ",
-    src: " https://nr1.blutv.com/blutv_n1/blutv_n1/playlist.m3u8 ",
-  },
+
   {
     channelName: "Nr1 türk ",
     src: " https://nr1turk.blutv.com/blutv_n1turk/live.m3u8 ",
@@ -850,27 +793,27 @@ const channels = [
     src: "https://helga.iptv2022.com/tv_100/index.m3u8  ",
   },
   {
-    channelName: "Agrotv  ",
+    channelName: "Agro Tv  ",
     src: "https://yayin30.haber100.com/live/agrotv/playlist.m3u8  ",
   },
   {
-    channelName: "Akittv  ",
+    channelName: "Akit Tv  ",
     src: "https://akittv-live.ercdn.net/akittv/akittv.m3u8  ",
   },
   {
-    channelName: "Aksutv  ",
+    channelName: "Aksu Tv  ",
     src: "https://live.artidijitalmedya.com/artidijital_aksutv/aksutv/playlist.m3u8  ",
   },
   {
-    channelName: " Anadolutv ",
+    channelName: " Anadolu Tv ",
     src: "https://live.artidijitalmedya.com/artidijital_anadolunet/anadolunet/playlist.m3u8  ",
   },
   {
-    channelName: "Angaratv  ",
+    channelName: "Angara Tv  ",
     src: "https://angr.radyotvonline.net/webtv/smil:kecioren.smil/chunklist_w976368300_b3268000_sltur.m3u8  ",
   },
   {
-    channelName: "Arastv  ",
+    channelName: "Aras Tv  ",
     src: " https://2.rtmp.org/tv217/yayin.stream/chunklist.m3u8 ",
   },
   {
@@ -882,7 +825,7 @@ const channels = [
     src: "https://sc-kuzeykibrissmarttv.ercdn.net/brt1hd/bant1/chunklist.m3u8  ",
   },
   {
-    channelName: "Brt2  ",
+    channelName: "Brt 2  ",
     src: " https://sc-kuzeykibrissmarttv.ercdn.net/brt2hd/bant1/chunklist.m3u8 ",
   },
   {
@@ -890,19 +833,19 @@ const channels = [
     src: "https://live.artidijitalmedya.com/artidijital_brtv/brtv/playlist.m3u8  ",
   },
   {
-    channelName: "Bursalinetv  ",
+    channelName: "Bursaline Tv  ",
     src: "https://edge1.socialsmart.tv/linetv/bant1/chunks.m3u8  ",
   },
   {
-    channelName: "Bursaon6tv  ",
+    channelName: "Bursaon6 Tv  ",
     src: "https://live.artidijitalmedya.com/artidijital_kanal16/kanal16/playlist.m3u8  ",
   },
   {
-    channelName: "Çaytv  ",
+    channelName: "Çay Tv  ",
     src: "https://edge1.socialsmart.tv/caytv/bant1/playlist.m3u8  ",
   },
   {
-    channelName: "Çiftçitv  ",
+    channelName: "Çiftçi Tv  ",
     src: " https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8 ",
   },
   {
